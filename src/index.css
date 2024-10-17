@@ -1,0 +1,258 @@
+.hero {
+  /* Hero Background Image */
+  background-image: url('E:/FRONT/new/furniture-store/src/hero-image.jpg');
+  /* Replace with the actual path to your image */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  /* Full viewport height */
+  display: flex;
+  align-items: center;
+  /* Vertically center content */
+  justify-content: center;
+  /* Horizontally center content */
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+/* Dark overlay to make text readable */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent black overlay */
+  z-index: 1;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+  /* Make sure text appears above the overlay */
+}
+
+.hero-text h1 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.hero-text p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.shop-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.shop-btn:hover {
+  background-color: #000;
+  color: #C26E41;
+}
+
+.categories {
+  padding: 50px;
+  background-color: #000;
+  /* Dark background for categories */
+  text-align: center;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  /* Responsive grid */
+  gap: 20px;
+}
+
+.category-item {
+  position: relative;
+  /* Position for the overlay */
+  overflow: hidden;
+  /* Hide overflow for rounded corners */
+  border-radius: 10px;
+  /* Rounded corners */
+  cursor: pointer;
+  /* Cursor pointer on hover */
+}
+
+.category-item img {
+  width: 100%;
+  /* Full width */
+  height: auto;
+  /* Maintain aspect ratio */
+  transition: transform 0.3s ease;
+  /* Smooth scaling on hover */
+}
+
+.category-item:hover img {
+  transform: scale(1.1);
+  /* Scale effect on hover */
+}
+
+.category-overlay {
+  position: absolute;
+  /* Position overlay */
+  top: 0;
+  /* Cover the entire area */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  /* Flexbox for centering */
+  align-items: center;
+  /* Center vertically */
+  justify-content: center;
+  /* Center horizontally */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent black */
+  color: #C26E41;
+  /* Text color */
+  opacity: 0;
+  /* Start hidden */
+  transition: opacity 0.3s ease;
+  /* Fade in on hover */
+}
+
+.category-item:hover .category-overlay {
+  opacity: 1;
+  /* Show overlay on hover */
+}
+
+.category-overlay h3 {
+  font-size: 1.5em;
+  /* Font size for category name */
+  margin: 0;
+  /* Remove default margin */
+}
+
+
+
+.featured-products {
+  color: #C26E41;
+  padding: 50px;
+  background-color: #121212;
+  /* Dark background for the section */
+  text-align: center;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* Adjust based on your layout */
+  gap: 20px;
+}
+
+.product-item {
+  background-color: #1c1c1c;
+  /* Dark background for the product cards */
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  color: #e0e0e0;
+  /* Light text color for better readability */
+  border: 2px solid #C26E41;
+  /* Optional: accent border color */
+}
+
+.product-item:hover {
+  transform: translateY(-10px);
+  /* Scale effect on hover */
+}
+
+.product-item img {
+  width: 100%;
+  /* Full width of the card */
+  height: auto;
+  /* Maintain aspect ratio */
+  object-fit: cover;
+  /* Cover the card area */
+  margin-bottom: 15px;
+  border-radius: 10px;
+  /* Rounded corners for images */
+}
+
+.product-item h3 {
+  font-size: 1.5em;
+  /* Product name font size */
+  margin-bottom: 10px;
+  /* Margin below the title */
+}
+
+.product-item p {
+  font-size: 1em;
+  /* Product description font size */
+  color: #dddddd;
+  /* Slightly lighter text for product descriptions */
+}
+
+.buy-btn {
+  background-color: #C26E41;
+  /* Accent button color */
+  color: white;
+  /* Button text color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: auto;
+  /* Keep button at the bottom */
+}
+
+.buy-btn:hover {
+  background-color: #a45b33;
+  /* Darker shade for hover effect */
+}
+
+/* General styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Dark mode styles */
+body.dark {
+  background-color: #000;
+  color: #e0e0e0;
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: #090909;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #1c1c1c;
+}
+
+/* Categories */
+.categories {
+  background-color: #000;
+}
+
+/* Product Card */
+.product-card {
+  background-color: #080808;
+  color: #e0e0e0;
+}
+
+/* Cart and Wishlist */
+.cart-page,
+.wishlist-page {
+  background-color: #000000;
+  color: #e0e0e0;
+}

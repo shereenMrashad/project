@@ -1,0 +1,35 @@
+/* WishlistPage.css */
+
+.wishlist-page {
+    padding: 50px;
+    /* Spacing around the cart page */
+    background-color: #121212;
+    /* Dark background for the page */
+    color: #e0e0e0;
+    /* Light text color */
+    min-height: 100vh;
+}
+
+.product-card {
+    margin-bottom: 20px;
+    /* Space between cards */
+}
+
+.product-actions {
+    display: flex;
+    justify-content: space-between;
+    /* Space between buttons */
+}
+
+.btn-danger {
+    margin-left: 10px;
+    /* Space between buttons */
+}
+
+.accordion,
+.accordion-body {
+    background-color: #333;
+    /* Dark background for accordion */
+    color: #f0f0f0;
+    /* Light text for readability */
+}

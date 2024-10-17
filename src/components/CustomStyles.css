@@ -1,0 +1,255 @@
+/* Animation for moving text */
+@keyframes scroll-text {
+    0% {
+        transform: translateX(100%);
+        /* Start from the right outside the screen */
+    }
+
+    100% {
+        transform: translateX(-100%);
+        /* Move all the way to the left outside the screen */
+    }
+}
+
+/* Styling for the top navbar with the moving text */
+.moving-text-navbar {
+    background-color: black;
+    /* Dark background color for the text navbar */
+    color: white;
+    /* Text color */
+    text-align: center;
+    /* Center the text */
+    overflow: hidden;
+    /* Hide the text when it goes out of the container */
+    white-space: nowrap;
+    /* Prevent the text from wrapping into multiple lines */
+    padding: 10px 0;
+    /* Padding for the navbar */
+}
+
+/* Applying the scroll animation to the moving text */
+.moving-text {
+    display: inline-block;
+    animation: scroll-text 10s linear infinite;
+    /* Apply the animation to move the text */
+}
+
+
+/* Make the moving text responsive */
+@media (max-width: 768px) {
+    .moving-text {
+        font-size: 14px;
+        /* Reduce font size on smaller screens */
+    }
+}
+
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Dark mode styles */
+body.dark {
+    background-color: #000;
+    color: #e0e0e0;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #090909;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #1c1c1c;
+}
+
+/* Categories */
+.categories {
+    background-color: #000;
+}
+
+/* Product Card */
+.product-card {
+    background-color: #080808;
+    color: #e0e0e0;
+}
+
+/* Cart and Wishlist */
+.cart-page,
+.wishlist-page {
+    background-color: #1c1c1c;
+    color: #e0e0e0;
+}
+
+/* Animation for moving text */
+@keyframes scroll-text {
+    0% {
+        transform: translateX(100%);
+        /* Start from the right outside the screen */
+    }
+
+    100% {
+        transform: translateX(-100%);
+        /* Move all the way to the left outside the screen */
+    }
+}
+
+/* Styling for the top navbar with the moving text */
+.moving-text-navbar {
+    background-color: black;
+    /* Dark background color for the text navbar */
+    color: white;
+    /* Text color */
+    text-align: center;
+    /* Center the text */
+    overflow: hidden;
+    /* Hide the text when it goes out of the container */
+    white-space: nowrap;
+    /* Prevent the text from wrapping into multiple lines */
+    padding: 10px 0;
+    /* Padding for the navbar */
+}
+
+/* Applying the scroll animation to the moving text */
+.moving-text {
+    display: inline-block;
+    animation: scroll-text 10s linear infinite;
+    /* Apply the animation to move the text */
+}
+
+
+/* Make the moving text responsive */
+@media (max-width: 768px) {
+    .moving-text {
+        font-size: 14px;
+        /* Reduce font size on smaller screens */
+    }
+}
+
+/* Styling the main navbar */
+.navbar {
+    background-color: #343a40;
+    /* Dark background color for the main navbar */
+}
+
+/* Styling for the logo */
+.navbar-brand img {
+    margin-right: 10px;
+    /* Add space between logo and text */
+}
+
+.navbar-logo img {
+    background-color: #343a40;
+    padding: 2px;
+    border-radius: 50%;
+}
+
+/* Styling for the links */
+.navbar-nav .nav-link {
+    color: white;
+    /* White color for the links */
+}
+
+/* Change color on hover */
+.navbar-nav .nav-link:hover {
+    color: #FF6347;
+    /* Change color to your preferred color on hover */
+}
+
+/* Logo and brand name */
+.navbar-brand {
+    color: white;
+    /* Color for the brand name */
+}
+
+.navbar-brand:hover {
+    color: #FF6347;
+    /* Change color of brand name on hover */
+}
+
+/* Icons styling */
+.navbar-nav .nav-link i {
+    font-size: 1.2rem;
+    /* Increase size of the icons */
+    color: white;
+    /* White color for the icons */
+}
+
+.navbar-nav .nav-link i:hover {
+    color: #FF6347;
+    /* Change color to your preferred color on hover */
+}
+
+/* Styling for the toggler */
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+    /* Light border color */
+}
+
+/* Change color of toggler icon */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255,255,255,.5)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    /* Change the color of the toggler icon */
+}
+
+.navbar-toggler:hover {
+    background-color: #D2691E;
+    /* Change background color to the desired hover color */
+}
+
+.search-page {
+    background-color: #121212;
+    /* Dark background for the search page */
+    color: #e0e0e0;
+    /* Light text color */
+    min-height: 100vh;
+    /* Full height of the viewport */
+    padding: 40px;
+    /* Optional padding */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #C26E41;
+    /* Your accent color */
+}
+
+input.form-control {
+    border-radius: 25px;
+    padding: 10px 20px;
+    border: 1px solid #C26E41;
+}
+
+input.form-control:focus {
+    border-color: #C26E41;
+    box-shadow: 0 0 5px rgba(194, 110, 65, 0.5);
+}
+
+.list-group-item {
+    background-color: #343a40;
+    /* Darker item background */
+    color: white;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.list-group-item h5 {
+    color: #C26E41;
+    /* Accent color for product names */
+}
+
+.list-group-item p {
+    font-size: 0.9rem;
+}
+
+.list-group-item span {
+    font-weight: bold;
+    color: #FF6347;
+    /* Price color */
+}

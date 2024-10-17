@@ -1,0 +1,700 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Kitchen Table",
+            "category": "Tables",
+            "price": "$200",
+            "description": "Modern kitchen table, made of high-quality wood.",
+            "image": "/tables/Kitchen Table.png"
+        },
+        {
+            "id": 2,
+            "name": "Dining Table",
+            "category": "Tables",
+            "price": "$350",
+            "description": "Spacious dining table with seating for six.",
+            "image": "/tables/Dining Table.png"
+        },
+        {
+            "id": 3,
+            "name": "Coffee Table",
+            "category": "Tables",
+            "price": "$120",
+            "description": "Small, minimalist coffee table perfect for living rooms.",
+            "image": "/tables/Coffee Table.png"
+        },
+        {
+            "id": 4,
+            "name": "Study Table",
+            "category": "Tables",
+            "price": "$180",
+            "description": "Study table with multiple drawers and a smooth finish.",
+            "image": "/tables/Writing Desk.png"
+        },
+        {
+            "id": 5,
+            "name": "Round Table",
+            "category": "Tables",
+            "price": "$220",
+            "description": "Round table with a classic wooden design.",
+            "image": "/tables/round-table.png"
+        },
+        {
+            "id": 6,
+            "name": "Glass Table",
+            "category": "Tables",
+            "price": "$400",
+            "description": "Elegant glass-top table for a modern look.",
+            "image": "/tables/Glass Table.png"
+        },
+        {
+            "id": 7,
+            "name": "Patio Table",
+            "category": "Tables",
+            "price": "$150",
+            "description": "Weather-resistant table ideal for outdoor use.",
+            "image": "/tables/patio-table.png"
+        },
+        {
+            "id": 8,
+            "name": "Folding Table",
+            "category": "Tables",
+            "price": "$100",
+            "description": "Compact and foldable table for versatile usage.",
+            "image": "/tables/folding-table.png"
+        },
+        {
+            "id": 9,
+            "name": "Console Table",
+            "category": "Tables",
+            "price": "$250",
+            "description": "Sleek console table with extra storage space.",
+            "image": "/tables/console-table.png"
+        },
+        {
+            "id": 10,
+            "name": "Bar Table",
+            "category": "Tables",
+            "price": "$300",
+            "description": "Stylish high-top table for home bars.",
+            "image": "/tables/bar-table.png"
+        },
+        {
+            "id": 11,
+            "name": "Vanity Mirror",
+            "category": "Mirrors",
+            "price": "$120",
+            "description": "Elegant vanity mirror with a wooden frame.",
+            "image": "/mirrors/Vanity Mirror.png"
+        },
+        {
+            "id": 12,
+            "name": "Full-Length Mirror",
+            "category": "Mirrors",
+            "price": "$250",
+            "description": "Large full-length mirror with a metal frame.",
+            "image": "/mirrors/Full-Length Mirror.png"
+        },
+        {
+            "id": 13,
+            "name": "Round Wall Mirror",
+            "category": "Mirrors",
+            "price": "$140",
+            "description": "Classic round wall mirror for living rooms.",
+            "image": "/mirrors/round-wall-mirror.png"
+        },
+        {
+            "id": 14,
+            "name": "Decorative Mirror",
+            "category": "Mirrors",
+            "price": "$180",
+            "description": "Artistic decorative mirror with a wooden frame.",
+            "image": "/mirrors/decorative-mirror.png"
+        },
+        {
+            "id": 15,
+            "name": "LED Mirror",
+            "category": "Mirrors",
+            "price": "$220",
+            "description": "LED illuminated mirror for bathrooms or makeup.",
+            "image": "/mirrors/led-mirror.png"
+        },
+        {
+            "id": 16,
+            "name": "Antique Mirror",
+            "category": "Mirrors",
+            "price": "$350",
+            "description": "Antique mirror with intricate detailing.",
+            "image": "/mirrors/antique-mirror.png"
+        },
+        {
+            "id": 17,
+            "name": "Frameless Mirror",
+            "category": "Mirrors",
+            "price": "$200",
+            "description": "Sleek frameless mirror with a minimalistic design.",
+            "image": "/mirrors/frameless-mirror.png"
+        },
+        {
+            "id": 18,
+            "name": "Bathroom Mirror",
+            "category": "Mirrors",
+            "price": "$160",
+            "description": "Simple and practical bathroom mirror.",
+            "image": "/mirrors/bathroom-mirror.png"
+        },
+        {
+            "id": 19,
+            "name": "Wall Mirror",
+            "category": "Mirrors",
+            "price": "$210",
+            "description": "Large decorative wall mirror for hallways.",
+            "image": "/mirrors/wall-mirror.png"
+        },
+        {
+            "id": 20,
+            "name": "Modern Mirror",
+            "category": "Mirrors",
+            "price": "$270",
+            "description": "Modern mirror with a geometric frame.",
+            "image": "/mirrors/modern-mirror.png"
+        },
+        {
+            "id": 21,
+            "name": "Vintage Mirror",
+            "category": "Mirrors",
+            "price": "$400",
+            "description": "Vintage-style mirror with a gold frame.",
+            "image": "/mirrors/vintage-mirror.png"
+        },
+        {
+            "id": 22,
+            "name": "Compact Dining Table",
+            "category": "Tables",
+            "price": "$250",
+            "description": "Compact dining table perfect for small spaces.",
+            "image": "/tables/Compact Dining Table.png"
+        },
+        {
+            "id": 23,
+            "name": "Adjustable Table",
+            "category": "Tables",
+            "price": "$130",
+            "description": "Height-adjustable table with a smooth finish.",
+            "image": "/tables/adjustable-table.png"
+        },
+        {
+            "id": 24,
+            "name": "Mirror Cabinet",
+            "category": "Mirrors",
+            "price": "$450",
+            "description": "Cabinet with a full-length mirror door.",
+            "image": "/mirrors/mirror-cabinet.png"
+        },
+        {
+            "id": 25,
+            "name": "Office Table",
+            "category": "Tables",
+            "price": "$300",
+            "description": "Office table with cable management and storage.",
+            "image": "/tables/office-table.png"
+        },
+        {
+            "id": 26,
+            "name": "Reclining Mirror",
+            "category": "Mirrors",
+            "price": "$240",
+            "description": "Reclining mirror with a hardwood base.",
+            "image": "/mirrors/reclining-mirror.png"
+        },
+        {
+            "id": 27,
+            "name": "Side Table",
+            "category": "Tables",
+            "price": "$150",
+            "description": "Small side table, perfect for the living room.",
+            "image": "/tables/side-table.png"
+        },
+        {
+            "id": 28,
+            "name": "Corner Table",
+            "category": "Tables",
+            "price": "$180",
+            "description": "Space-saving corner table.",
+            "image": "/tables/corner-table.png"
+        },
+        {
+            "id": 29,
+            "name": "Console Mirror",
+            "category": "Mirrors",
+            "price": "$300",
+            "description": "Mirror designed for console tables.",
+            "image": "/mirrors/console-mirror.png"
+        },
+        {
+            "id": 30,
+            "name": "Oval Mirror",
+            "category": "Mirrors",
+            "price": "$320",
+            "description": "Elegant oval-shaped mirror.",
+            "image": "/mirrors/oval-mirror.png"
+        },
+        {
+            "id": 31,
+            "name": "Wall Clock",
+            "category": "Clocks",
+            "description": "A stylish wall clock with a modern design.",
+            "price": "$399",
+            "image": "/clocks/10328439.png"
+        },
+        {
+            "id": 32,
+            "name": "Wall Clock",
+            "category": "Clocks",
+            "description": "A classic clock with a vintage feel.",
+            "price": "$213.75",
+            "image": "/clocks/10328441.png"
+        },
+        {
+            "id": 33,
+            "name": "Wall Clock",
+            "category": "Clocks",
+            "description": "A sleek clock with multiple features.",
+            "price": "$500",
+            "image": "/clocks/10328445.png"
+        },
+        {
+            "id": 34,
+            "name": "Wall Clock",
+            "category": "Clocks",
+            "description": "A rustic clock that fits any room.",
+            "price": "$99",
+            "image": "/clocks/10328450.png"
+        },
+        {
+            "id": 35,
+            "name": "Wall Clock",
+            "category": "Clocks",
+            "description": "A minimalist clock for a modern touch.",
+            "price": "$120",
+            "image": "/clocks/10328451.png"
+        },
+        {
+            "id": 36,
+            "name": "Wall Clock",
+            "category": "Clocks",
+            "description": "Sleek wall clock with a glass frame for a modern touch.",
+            "price": 600,
+            "image": "/clocks/circular-clock-indoors-still-life.jpg"
+        },
+        {
+            "id": 37,
+            "name": "Wall Clock",
+            "category": "Clocks",
+            "description": "Classic wooden wall clock with a vintage design.",
+            "price": 8000,
+            "image": "/clocks/pd109-pdobj00419a-image.jpg"
+        },
+        {
+            "id": 38,
+            "name": "Wall Clock",
+            "category": "Clocks",
+            "description": "Elegant wooden wall clock with a timeless design.",
+            "price": 9000,
+            "image": "/clocks/pd109-pdobj00424a-image.jpg"
+        },
+        {
+            "id": 39,
+            "name": "Wall Clock",
+            "category": "Clocks",
+            "description": "Simple wall clock with a minimalistic design.",
+            "price": 250,
+            "image": "/clocks/pexels-iseeghoststoo-1010480.jpg"
+        },
+        {
+            "id": 40,
+            "name": "Wall Clock",
+            "category": "Clocks",
+            "description": "A vintage style clock that adds character to your space.",
+            "price": 3400,
+            "image": "/clocks/pexels-shovyrahman-177154.jpg"
+        },
+        {
+            "id": 41,
+            "name": "Wall Clock",
+            "category": "Clocks",
+            "description": "Luxury wall clock with an elegant design and premium finish.",
+            "price": 750,
+            "image": "/clocks/square-clock-indoors-still-life.jpg"
+        },
+        {
+            "id": 42,
+            "name": "Wall Clock",
+            "category": "Clocks",
+            "description": "A luxury clock with gold accents.",
+            "price": 900,
+            "image": "/clocks/vintage-day-analog-circle-course.jpg"
+        },
+        {
+            "id": 43,
+            "name": "Throw Pillow",
+            "category": "Pillows",
+            "price": "$15",
+            "description": "Soft throw pillow for your couch.",
+            "image": "/pillows/1.png"
+        },
+        {
+            "id": 44,
+            "name": "Cushion Pillow",
+            "category": "Pillows",
+            "price": "$20",
+            "description": "Comfortable cushion pillow for support.",
+            "image": "/pillows/2.png"
+        },
+        {
+            "id": 45,
+            "name": "Decorative Pillow",
+            "category": "Pillows",
+            "price": "$30",
+            "description": "Stylish decorative pillow for any room.",
+            "image": "/pillows/3.png"
+        },
+        {
+            "id": 46,
+            "name": "Memory Foam Pillow",
+            "category": "Pillows",
+            "price": "$40",
+            "description": "High-quality memory foam pillow for comfort.",
+            "image": "/pillows/4.png"
+        },
+        {
+            "id": 47,
+            "name": "Silk Pillow",
+            "category": "Pillows",
+            "price": "$60",
+            "description": "Luxurious silk pillow for a touch of elegance.",
+            "image": "/pillows/5.png"
+        },
+        {
+            "id": 48,
+            "name": "Sectional Sofa",
+            "category": "Sofas",
+            "price": "$700",
+            "description": "Spacious sectional sofa for large living rooms.",
+            "image": "/sofas/11288301.png"
+        },
+        {
+            "id": 49,
+            "name": "Leather Sofa",
+            "category": "Sofas",
+            "price": "$900",
+            "description": "Luxurious leather sofa with a modern design.",
+            "image": "/sofas/11288306.png"
+        },
+        {
+            "id": 50,
+            "name": "Sleeper Sofa",
+            "category": "Sofas",
+            "price": "$800",
+            "description": "Versatile sleeper sofa that doubles as a bed.",
+            "image": "/sofas/11288311.png"
+        },
+        {
+            "id": 51,
+            "name": "Recliner Sofa",
+            "category": "Sofas",
+            "price": "$650",
+            "description": "Comfortable recliner sofa for ultimate relaxation.",
+            "image": "/sofas/11288312.png"
+        },
+        {
+            "id": 52,
+            "name": "Loveseat",
+            "category": "Sofas",
+            "price": "$400",
+            "description": "Cozy loveseat for two.",
+            "image": "/sofas/11288314.png"
+        },
+        {
+            "id": 53,
+            "name": "Fabric Sofa",
+            "category": "Sofas",
+            "price": "$500",
+            "description": "Stylish fabric sofa with soft cushions.",
+            "image": "/sofas/11288314.png"
+        },
+        {
+            "id": 54,
+            "name": "L-Shaped Sofa",
+            "category": "Sofas",
+            "price": "$750",
+            "description": "L-shaped sofa perfect for corner spaces.",
+            "image": "/sofas/11288314.png"
+        },
+        {
+            "id": 55,
+            "name": "Chaise Lounge",
+            "category": "Sofas",
+            "price": "$450",
+            "description": "Elegant chaise lounge for relaxing.",
+            "image": "/sofas/11288343.png"
+        },
+        {
+            "id": 56,
+            "name": "Sofa Bed",
+            "category": "Sofas",
+            "price": "$550",
+            "description": "Functional sofa bed for guests.",
+            "image": "/sofas/11288363.png"
+        },
+        {
+            "id": 57,
+            "name": "Grey Chair",
+            "category": "Chairs",
+            "description": "A stylish Grey Chair with a modern design.",
+            "price": 100,
+            "image": "/chairs/beautiful-shot-stylish-grey-chair-isolated-white-background (1).jpg"
+        },
+        {
+            "id": 58,
+            "name": "bubble chair",
+            "category": "Chairs",
+            "description": "A Crazy Chair From Space.",
+            "price": 500,
+            "image": "/chairs/bubble-chair-isolated-transparent-background_191095-12894.jpg"
+        },
+        {
+            "id": 59,
+            "name": "Striped Chair",
+            "category": "Chairs",
+            "description": "A Vintage Chair for Classic Lovers .",
+            "price": 1500,
+            "image": "/chairs/chair-3961572_1280.webp"
+        },
+        {
+            "id": 60,
+            "name": "Green Chair",
+            "category": "Chairs",
+            "description": "Green chair that will fit Perfectly with Boho Style.",
+            "price": 600,
+            "image": "/chairs/chair-3961592_1280.webp"
+        },
+        {
+            "id": 61,
+            "name": "Blue Chair",
+            "category": "Chairs",
+            "description": "Classic old fashonied Chair.",
+            "price": 800,
+            "image": "/chairs/chair-4070161_1280.webp"
+        },
+        {
+            "id": 62,
+            "name": "Purple Wooden Chair",
+            "category": "Chairs",
+            "description": " wooden Chair for Fun Lovers .",
+            "price": 250,
+            "image": "/chairs/clipped-purple-rocking-chair-isolated-transparent-background_191095-18008.jpg"
+        },
+        {
+            "id": 63,
+            "name": "Brown Chair",
+            "category": "Chairs",
+            "description": "Over size Chair for relaxing ZZzz.",
+            "price": 110,
+            "image": "/chairs/oversized-4586851_1280.webp"
+        },
+        {
+            "id": 64,
+            "name": "Beig Chair",
+            "category": "Chairs",
+            "description": " a well crafted dinner table chair that fit in any style.",
+            "price": 600,
+            "image": "/chairs/parsons-chair-isolated-transparent-background_191095-13659.avif"
+        },
+        {
+            "id": 65,
+            "name": "Orange Chair",
+            "category": "Chairs",
+            "description": "Luxury Chair with an elegant design and premium finish.",
+            "price": 850,
+            "image": "/chairs/wingback-chair-isolated-transparent-background_191095-13733.avif"
+        },
+        {
+            "id": 66,
+            "name": "office chair ",
+            "category": "Chairs",
+            "description": "it Will Help you to study and finish your work.",
+            "price": 820,
+            "image": "/chairs/chair-4281511_1280.webp"
+        },
+        {
+            "id": 67,
+            "name": "Navy Chair ",
+            "category": "Chairs",
+            "description": "this Chair Acts as a lazy boy .",
+            "price": 900,
+            "image": "/chairs/rocker-4004161_1280.webp"
+        },
+        {
+            "id": 68,
+            "name": "Amanda Bed room",
+            "description": " featuring a luxurious bed, spacious closet, two night stands, and a dresser - all made from high-quality lumber boards.",
+            "category": "Bedroom",
+            "price": 3500,
+            "image": "/bed photo main/bed room -1.jpg"
+        },
+        {
+            "id": 69,
+            "name": "Lotus Bed room",
+            "description": "a cozy and functional addition to any bedroom. With its comfortable design, it provides a cozy atmosphere for a good night's sleep.",
+            "category": "Bedroom",
+            "price": 2500,
+            "image": "/bed photo main/bed room -2.jpg"
+        },
+        {
+            "id": 70,
+            "name": "Rayan Bed room",
+            "description": "provides both function and style. The sturdy frame ensures durability while the comfortable upholstered.Enhance your sleeping experience with this expertly designed bedroom set.",
+            "category": "Bedroom",
+            "price": 4500,
+            "image": "/bed photo main/bed-room-3.jpg"
+        },
+        {
+            "id": 71,
+            "name": "Tofo Bed room",
+            "description": " featuring a luxurious bed, spacious closet, two night stands, and a dresser - all made from high-quality lumber boards.",
+            "category": "Bedroom",
+            "price": 4000,
+            "image": "/bed photo main/bed room 4.jpg"
+        },
+        {
+            "id": 72,
+            "name": "Sole Bed room",
+            "description": "The sturdy frame ensures durability while the comfortable upholstered head board adds a touch of luxury to your bedroom",
+            "category": "Bedroom",
+            "price": 3500,
+            "image": "/bed photo main/bed room-5.jpg"
+        },
+        {
+            "id": 73,
+            "name": "Riva Bed room",
+            "description": "a stylish and cozy upholstered bed that includes a closet, two commodes, and a dresser.",
+            "category": "Bedroom",
+            "price": 2500,
+            "image": "/bed photo main/bed room-6.jpg"
+        },
+        {
+            "id": 74,
+            "name": "Z Bed",
+            "description": "offers a comfortable, minimalist design that promotes relaxation and functionality.",
+            "category": "Bedroom",
+            "price": 500,
+            "image": "/bed photo main/bed 7.jpg"
+        },
+        {
+            "id": 75,
+            "name": "viora Bed",
+            "description": "offers a comfortable and luxurious sleeping experience, thanks to its high-quality design. With a focus on comfort and durability.",
+            "category": "Bedroom",
+            "price": 1000,
+            "image": "/bed photo main/bed 8.jpg"
+        },
+        {
+            "id": 76,
+            "name": "Luna Bed",
+            "description": "This high quality bed, designed by experts, promises a peaceful sleep every night.",
+            "category": "Bedroom",
+            "price": 1500,
+            "image": "/bed photo main/bed 9.jpg"
+        },
+        {
+            "id": 77,
+            "name": "Deniz Bed",
+            "description": "This high quality bed, designed by experts, promises a peaceful sleep every night.",
+            "category": "Bedroom",
+            "price": 2000,
+            "image": "/bed photo main/bed10.jpg"
+        },
+        {
+            "id": 78,
+            "name": "Living Luxe",
+            "description": " a beautifully designed living room that combines elegance and comfort.",
+            "category": "Living Room",
+            "price": 3000,
+            "image": "/living main img/living1.jpg"
+        },
+        {
+            "id": 79,
+            "name": "Cozy Corner",
+            "description": "a beautifully designed living room that combines elegance and comfort",
+            "category": "Living Room",
+            "price": 2000,
+            "image": "/living main img/living2.jpg"
+        },
+        {
+            "id": 80,
+            "name": "Urban Haven",
+            "description": "a beautifully designed living room that combines elegance and comfort",
+            "category": "Living Room",
+            "price": 1500,
+            "image": "/living main img/living3.jpg"
+        },
+        {
+            "id": 81,
+            "name": "Serenity",
+            "description": "a beautifully designed living room that combines elegance and comfort",
+            "category": "Living Room",
+            "price": 2500,
+            "image": "/living main img/living4.jpg"
+        },
+        {
+            "id": 82,
+            "name": "Design Den",
+            "description": "a beautifully designed living room that combines elegance and comfort",
+            "category": "Living Room",
+            "price": 3500,
+            "image": "/living main img/living5.jpg"
+        },
+        {
+            "id": 83,
+            "name": "Gather & Relax",
+            "description": "a beautifully designed living room that combines elegance and comfort",
+            "category": "Living Room",
+            "price": 4500,
+            "image": "/living main img/living6.jpg"
+        },
+        {
+            "id": 84,
+            "name": "Home Harmony",
+            "description": "a beautifully designed living room that combines elegance and comfort",
+            "category": "Living Room",
+            "price": 5500,
+            "image": "/living main img/living7.jpg"
+        },
+        {
+            "id": 85,
+            "name": "Lively Living",
+            "description": "a beautifully designed living room that combines elegance and comfort",
+            "category": "Living Room",
+            "price": 6000,
+            "image": "/living main img/living8.jpg"
+        },
+        {
+            "id": 86,
+            "name": "Tranquil Retreat",
+            "description": "a beautifully designed living room that combines elegance and comfort",
+            "category": "Living Room",
+            "price": 7500,
+            "image": "/living main img/living9.jpg"
+        },
+        {
+            "id": 87,
+            "name": "Serene Sitting",
+            "description": "a beautifully designed living room that combines elegance and comfort",
+            "category": "Living Room",
+            "price": 3000,
+            "image": "/living main img/living10.jpg"
+        }
+    ]
+}

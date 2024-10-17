@@ -1,0 +1,112 @@
+.product-list {
+    background-color: #2d2d2d;
+    /* Ensure product list area is dark */
+    color: #f0f0f0;
+    /* Light text for readability */
+    min-height: 100vh;
+    /* Full height to cover screen */
+    padding: 20px;
+    /* Add some padding for spacing */
+}
+
+.accordion,
+.accordion-body {
+    background-color: #333;
+    /* Dark background for accordion */
+    color: #f0f0f0;
+    /* Light text for readability */
+}
+
+input[type="number"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border: 1px solid #C26E41;
+    /* Focus state */
+}
+
+h2,
+h3 {
+    color: white;
+    /* Ensure headings are white */
+}
+
+/* Filter section styling */
+.filter-section {
+    background-color: #333;
+    /* Dark background for the filter */
+    padding: 20px;
+    /* Add spacing */
+    border-radius: 10px;
+    /* Rounded corners for a professional look */
+    border: 1px solid #444;
+    /* Subtle border for contrast */
+    color: #f0f0f0;
+    /* Text color */
+    margin-bottom: 20px;
+    /* Space between the filter and product list */
+}
+
+.filter-section h5 {
+    font-size: 18px;
+    color: #060606;
+    /* Ensure the category text is white */
+    margin-bottom: 15px;
+    /* Add spacing between filter titles */
+}
+
+.filter-section h5:hover {
+    color: #C26E41;
+    /* Highlight hover effect */
+    cursor: pointer;
+    /* Add a pointer to show it is clickable */
+}
+
+.filter-section input {
+    background-color: #444;
+    /* Dark background for input fields */
+    color: white;
+    border: 1px solid #555;
+    /* Subtle border */
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    /* Add space between fields */
+    border-radius: 5px;
+    /* Round corners for inputs */
+    transition: border-color 0.3s ease;
+}
+
+.filter-section input:focus {
+    outline: none;
+    border-color: #C26E41;
+    /* Border color when focused */
+}
+
+.filter-section .price-range {
+    display: flex;
+    gap: 10px;
+    /* Space between Min and Max price inputs */
+}
+
+.filter-section button {
+    background-color: #C26E41;
+    /* Button background matching theme */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.filter-section button:hover {
+    background-color: #a25033;
+    /* Darker hover effect */
+}

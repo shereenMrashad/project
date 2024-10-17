@@ -1,0 +1,79 @@
+body {
+    background-color: #2d2d2d;
+    /* Darker tone for background */
+    color: #f0f0f0;
+    /* Light text for global consistency */
+}
+
+.card {
+    display: flex;
+    border: 1px solid #444;
+    /* Subtle border for cards */
+    width: 300px;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    /* Animation for hover effect */
+    background-color: #333;
+    /* Ensure the card background is dark */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    /* Slight lift on hover */
+}
+
+.card-title,
+.card-text {
+    color: #f0f0f0;
+    /* Softer white for readability */
+}
+
+.card-body {
+    background-color: #333;
+    padding: 20px;
+    transition: background-color 0.3s;
+}
+
+.product-name {
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.product-category {
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.product-name {
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.product-name:hover {
+    color: #C26E41;
+    cursor: pointer;
+}
+
+.btn-outline-warning,
+.btn-outline-secondary {
+    color: #f0f0f0;
+    border: 1px solid #444;
+}
+
+.btn-outline-warning:hover,
+.btn-outline-secondary:hover {
+    background-color: #C26E41;
+    color: #2d2d2d;
+}
+
+.btn-primary {
+    background-color: #C26E41;
+    border-color: #C26E41;
+}
+
+.btn-primary:hover {
+    background-color: #a25033;
+}

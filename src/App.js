@@ -8,7 +8,7 @@ import CustomNavbar from './components/CustomNavbar';
 import SearchPage from './components/SearchPage';
 import CartPage from './components/CartPage';
 import WishlistPage from './components/WishlistPage';
-import ProductList from './components/ProductList'; // Import your ProductList component
+import ProductList from './components/ProductList';
 import './components/CustomStyles.css';
 import productsData from './data/products.json';
 
@@ -43,6 +43,8 @@ function App() {
     <div className="App dark">
       <Router>
         <CustomNavbar cartCount={cart.length} wishlistCount={wishlist.length} />
+
+        {/* Define routes here */}
         <Routes>
           <Route path="/search" element={<SearchPage products={productsData.products} />} />
           <Route path="/cart" element={<CartPage cartItems={cart} removeFromCart={handleRemoveFromCart} />} />
@@ -52,15 +54,23 @@ function App() {
               <WishlistPage
                 wishlistItems={wishlist}
                 removeFromWishlist={handleRemoveFromWishlist}
-                addToCart={handleAddToCart} // Pass addToCart function here
+                addToCart={handleAddToCart}
               />
             }
           />
-          <Route path="/products" element={<ProductList />} /> {/* Add this line for ProductList */}
+          <Route
+            path="/products"
+            element={<ProductList selectedCategory={selectedCategory} onAddToCart={handleAddToCart} onAddToWishlist={handleAddToWishlist} />}
+          />
+          {/* Home Route */}
+          <Route path="/" element={
+            <>
+              <Hero />
+              <Categories onCategorySelect={handleCategorySelect} />
+              <FeaturedProducts selectedCategory={selectedCategory} onAddToCart={handleAddToCart} onAddToWishlist={handleAddToWishlist} />
+            </>
+          } />
         </Routes>
-        <Hero />
-        <Categories onCategorySelect={handleCategorySelect} />
-        <FeaturedProducts selectedCategory={selectedCategory} onAddToCart={handleAddToCart} onAddToWishlist={handleAddToWishlist} />
       </Router>
     </div>
   );

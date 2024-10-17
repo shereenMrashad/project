@@ -29,15 +29,9 @@ function CustomNavbar({ cartCount, wishlistCount }) {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link as={Link} to="/">Home</Nav.Link>
-                        <Nav.Link as={Link} to="/collections">Collections</Nav.Link>
                         <Nav.Link as={Link} to="/products">Product List</Nav.Link> {/* Added link to Product List */}
-                        <NavDropdown title="Shop" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Furniture</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Decor</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Accessories</NavDropdown.Item>
-                        </NavDropdown>
-                        <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
-                        <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
+
+
                     </Nav>
                     <Nav>
                         <Nav.Link as={Link} to="/search"><i className="bi bi-search"></i></Nav.Link>

@@ -1,9 +1,21 @@
 /* WishlistPage.css */
+/* Set the background color for the entire page */
+html,
+body {
+    background-color: black;
+    /* Set background color to black */
+    margin: 0;
+    /* Remove default margin */
+    height: 100%;
+    /* Ensure the body takes the full height */
+    color: white;
+    /* Set default text color to white */
+}
 
 .wishlist-page {
     padding: 50px;
     /* Spacing around the cart page */
-    background-color: #121212;
+    background-color: #000000;
     /* Dark background for the page */
     color: #e0e0e0;
     /* Light text color */

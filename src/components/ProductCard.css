@@ -1,5 +1,5 @@
 body {
-    background-color: #2d2d2d;
+    background-color: #000000;
     /* Darker tone for background */
     color: #f0f0f0;
     /* Light text for global consistency */
@@ -7,14 +7,18 @@ body {
 
 .card {
     display: flex;
-    border: 1px solid #444;
+    border: 1px solid #000000;
     /* Subtle border for cards */
     width: 300px;
+    /* Fixed width for cards */
     justify-content: center;
+    /* Center content */
     transition: transform 0.3s ease;
     /* Animation for hover effect */
-    background-color: #333;
+    background-color: #000000;
     /* Ensure the card background is dark */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    /* Add shadow */
 }
 
 .card:hover {
@@ -22,58 +26,89 @@ body {
     /* Slight lift on hover */
 }
 
-.card-title,
-.card-text {
-    color: #f0f0f0;
-    /* Softer white for readability */
-}
-
 .card-body {
-    background-color: #333;
+    background-color: #000000;
+    /* Background color for card body */
     padding: 20px;
-    transition: background-color 0.3s;
+    /* Padding inside the card */
 }
 
 .product-name {
     color: white;
+    /* Color for product name */
     font-weight: bold;
+    /* Bold font for product name */
     transition: color 0.3s ease;
+    /* Smooth transition for color change */
 }
 
-.product-category {
-    color: white;
-    font-weight: bold;
-    transition: color 0.3s ease;
+.product-description {
+    color: #C26E41;
+    /* Light gray for product description (ensure it's light enough) */
+    margin: 10px 0;
+    /* Margin for spacing */
 }
 
-.product-name {
-    color: white;
+.product-price {
+    color: #f0f0f0;
+    /* Light color for the price */
     font-weight: bold;
-    transition: color 0.3s ease;
+    /* Make price bold for emphasis */
 }
 
 .product-name:hover {
     color: #C26E41;
+    /* Change color on hover for product name */
     cursor: pointer;
+    /* Pointer cursor on hover */
+}
+
+.btn {
+    border-radius: 5px;
+    /* Rounded corners for buttons */
+    padding: 10px 15px;
+    /* Better touch target size for buttons */
 }
 
 .btn-outline-warning,
 .btn-outline-secondary {
     color: #f0f0f0;
-    border: 1px solid #444;
+    /* Text color for outline buttons */
+    border: 1px solid #030303;
+    /* Border for outline buttons */
 }
 
 .btn-outline-warning:hover,
 .btn-outline-secondary:hover {
     background-color: #C26E41;
-    color: #2d2d2d;
+    /* Change background color on hover */
+    color: #0e0e0e;
+    /* Change text color on hover */
 }
 
 .btn-primary {
     background-color: #C26E41;
+    /* Background color for primary button */
     border-color: #C26E41;
+    /* Border color for primary button */
 }
 
 .btn-primary:hover {
     background-color: #a25033;
+    /* Darker on hover */
+}
+
+.btn:focus {
+    outline: 2px solid #C26E41;
+    /* Outline for focused buttons */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        /* Full width on small screens */
+        margin: 10px 0;
+        /* Add margin */
+    }
 }

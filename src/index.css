@@ -24,7 +24,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0);
   /* Semi-transparent black overlay */
   z-index: 1;
 }
@@ -142,7 +142,7 @@
 .featured-products {
   color: #C26E41;
   padding: 50px;
-  background-color: #121212;
+  background-color: #000;
   /* Dark background for the section */
   text-align: center;
 }
@@ -155,7 +155,7 @@
 }
 
 .product-item {
-  background-color: #1c1c1c;
+  background-color: #000000;
   /* Dark background for the product cards */
   padding: 20px;
   border-radius: 10px;
@@ -231,12 +231,12 @@ body.dark {
 
 /* Navbar styling */
 .navbar {
-  background-color: #090909;
+  background-color: #000000;
 }
 
 /* Hero Section */
 .hero {
-  background-color: #1c1c1c;
+  background-color: #000000;
 }
 
 /* Categories */

@@ -1,5 +1,19 @@
+/* WishlistPage.css */
+/* Set the background color for the entire page */
+html,
+body {
+    background-color: black;
+    /* Set background color to black */
+    margin: 0;
+    /* Remove default margin */
+    height: 100%;
+    /* Ensure the body takes the full height */
+    color: white;
+    /* Set default text color to white */
+}
+
 .product-list {
-    background-color: #2d2d2d;
+    background-color: #000000;
     /* Ensure product list area is dark */
     color: #f0f0f0;
     /* Light text for readability */
@@ -11,14 +25,14 @@
 
 .accordion,
 .accordion-body {
-    background-color: #333;
+    background-color: #000000;
     /* Dark background for accordion */
     color: #f0f0f0;
     /* Light text for readability */
 }
 
 input[type="number"] {
-    background-color: #333;
+    background-color: #050505;
     color: white;
     border: none;
     padding: 10px;
@@ -34,18 +48,19 @@ input[type="number"]:focus {
 h2,
 h3 {
     color: white;
+    background-color: #050505;
     /* Ensure headings are white */
 }
 
 /* Filter section styling */
 .filter-section {
-    background-color: #333;
+    background-color: #050505;
     /* Dark background for the filter */
     padding: 20px;
     /* Add spacing */
     border-radius: 10px;
     /* Rounded corners for a professional look */
-    border: 1px solid #444;
+    border: 1px solid #000000;
     /* Subtle border for contrast */
     color: #f0f0f0;
     /* Text color */
@@ -55,7 +70,7 @@ h3 {
 
 .filter-section h5 {
     font-size: 18px;
-    color: #060606;
+    color: #040404;
     /* Ensure the category text is white */
     margin-bottom: 15px;
     /* Add spacing between filter titles */
@@ -69,7 +84,7 @@ h3 {
 }
 
 .filter-section input {
-    background-color: #444;
+    background-color: #403b3b;
     /* Dark background for input fields */
     color: white;
     border: 1px solid #555;

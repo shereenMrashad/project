@@ -11,14 +11,15 @@ function ProductCard({ product, onAddToCart, onAddToWishlist }) {
                 src={product.image}
                 alt={`Image of ${product.name}`}
                 className='card-img'
+                onError={(e) => { e.target.src = '/path/to/default-image.png'; }} // Fallback image
             />
             <Card.Body className='text-center'>
-                <h6 className='text-muted'>{product.category}</h6>
                 <h5 className='product-name'>{product.name}</h5>
-                <h6 className='text-muted'>${product.price}</h6>
+                <p className='product-description'>{product.description}</p>
+                <h6 className='product-price'>${product.price}</h6>
                 <div className='product-actions mt-3'>
                     <Link
-                        to={`/product/${product.id}`}
+                        to={`/product/${product.id}`} // Link to the product details page with the product ID
                         className="btn btn-outline-secondary me-2"
                         role="button"
                     >

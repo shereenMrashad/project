@@ -59,12 +59,12 @@ body.dark {
 
 /* Navbar styling */
 .navbar {
-    background-color: #090909;
+    background-color: #000000;
 }
 
 /* Hero Section */
 .hero {
-    background-color: #1c1c1c;
+    background-color: #0c0c0c;
 }
 
 /* Categories */
@@ -132,7 +132,7 @@ body.dark {
 
 /* Styling the main navbar */
 .navbar {
-    background-color: #343a40;
+    background-color: #020202;
     /* Dark background color for the main navbar */
 }
 
@@ -231,7 +231,7 @@ input.form-control:focus {
 }
 
 .list-group-item {
-    background-color: #343a40;
+    background-color: #000000;
     /* Darker item background */
     color: white;
     margin-bottom: 10px;

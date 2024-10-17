@@ -59,13 +59,14 @@ function ProductList() {
                             {/* Category Filter */}
                             <AccordionItem eventKey='0'>
                                 <h5>Categories</h5>
+                                <h5 onClick={() => setCategory('')}>Show All</h5> {/* Button to reset category */}
                                 <h5 onClick={() => setCategory('Mirrors')}>Mirrors</h5>
                                 <h5 onClick={() => setCategory('Chairs')}>Chairs</h5>
                                 <h5 onClick={() => setCategory('Tables')}>Tables</h5>
                                 <h5 onClick={() => setCategory('Clocks')}>Clocks</h5>
                                 <h5 onClick={() => setCategory('Pillows')}>Pillows</h5>
                                 <h5 onClick={() => setCategory('Bedroom')}>Bedroom</h5>
-                                <h5 onClick={() => setCategory('Living Room')}>Livingroom</h5>
+                                <h5 onClick={() => setCategory('Living Room')}>Living Room</h5>
                             </AccordionItem>
 
                             {/* Price Filter */}

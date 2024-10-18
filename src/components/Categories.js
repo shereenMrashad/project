@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import productsData from '../data/products.json'; // Import your JSON data
+import productsData from '../data/products.json';
 import '../index.css';
 
-function Categories() {
+function Categories({ onCategorySelect }) {
     const [categories, setCategories] = useState([]);
 
     // Extract unique categories from products JSON
@@ -11,20 +11,17 @@ function Categories() {
         setCategories(uniqueCategories);
     }, []);
 
-    const formatCategoryName = (category) => {
-        return category.toLowerCase().replace(/\s+/g, '');
-    };
-
     return (
         <section className="categories">
             <h2>Shop by Category</h2>
             <div className="category-grid">
                 {categories.map((category, index) => (
-                    <div className="category-item" key={index}>
-                        <img
-                            src={`/images/${formatCategoryName(category)}.jpg`}
-                            alt={category}
-                        />
+                    <div
+                        className="category-item"
+                        key={index}
+                        onClick={() => onCategorySelect(category)} // Call onCategorySelect on click
+                    >
+                        <img src={`/images/${category.toLowerCase()}.jpg`} alt={category} />
                         <div className="category-overlay">
                             <h3>{category}</h3>
                         </div>

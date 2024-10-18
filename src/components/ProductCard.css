@@ -1,137 +1,58 @@
-/* Global Styles */
-body {
-    background-color: #000000;
-    /* Dark background for consistency */
-    color: #f0f0f0;
-    /* Light text color for readability */
-    font-family: 'Arial', sans-serif;
-    /* Consistent font */
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.product-card {
+    background-color: #1c1c1c;
+    /* Dark background for the card */
+    border-radius: 8px;
+    /* Rounded corners */
+    transition: transform 0.2s ease;
+    /* Smooth hover effect */
 }
 
-/* Card Styles */
-.card {
-    display: flex;
-    flex-direction: column;
-    /* Stack items vertically in the card */
-    align-items: center;
-    /* Center content */
-    border: 1px solid #222;
-    /* Slight border for card separation */
-    width: 300px;
-    /* Fixed width for uniformity */
-    background-color: #000000;
-    /* Ensure the card background matches the dark theme */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    /* Subtle shadow for depth */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    /* Smooth hover animation */
-    margin: 15px;
-    /* Spacing between cards */
-}
-
-.card:hover {
+.product-card:hover {
     transform: translateY(-5px);
-    /* Lift on hover for interactivity */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8);
-    /* Enhanced shadow effect on hover */
+    /* Lift effect on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    /* Shadow on hover */
 }
 
-.card-body {
-    background-color: #000000;
-    /* Dark background for the card body */
-    padding: 20px;
-    /* Inner padding for content spacing */
-    text-align: center;
-    /* Center text alignment */
+.card-img {
+    border-top-left-radius: 8px;
+    /* Match card border radius */
+    border-top-right-radius: 8px;
+    /* Match card border radius */
 }
 
-/* Product Text Styles */
 .product-name {
-    color: #f0f0f0;
-    /* Light color for product name */
-    font-weight: bold;
-    /* Emphasize the product name */
-    transition: color 0.3s ease;
-    /* Smooth color transition */
-}
-
-.product-name:hover {
+    font-size: 1.2rem;
+    /* Larger font for the product name */
     color: #C26E41;
-    /* Accent color on hover for the product name */
-    cursor: pointer;
-    /* Change cursor to pointer on hover */
-}
-
-.product-description {
-    color: #C26E41;
-    /* Accent color for the product description */
-    margin: 10px 0;
-    /* Spacing for readability */
+    /* Accent color for product name */
 }
 
 .product-price {
+    font-size: 1.1rem;
+    /* Price font size */
     color: #f0f0f0;
-    /* Light color for the price */
+    /* Light color for price */
     font-weight: bold;
-    /* Make price bold for emphasis */
+    /* Emphasize price */
+}
+
+.product-description {
+    color: #e0e0e0;
+    /* Description color */
+    margin: 10px 0;
+    /* Spacing for the description */
 }
 
 /* Button Styles */
 .btn {
-    border-radius: 5px;
-    /* Rounded corners for a modern look */
-    padding: 10px 15px;
-    /* Adequate padding for larger touch areas */
     margin: 5px;
     /* Space between buttons */
-    cursor: pointer;
-    /* Pointer cursor for all buttons */
-}
-
-.btn-outline-warning,
-.btn-outline-secondary {
-    color: #f0f0f0;
-    /* Light color for outline buttons */
-    border: 1px solid #333;
-    /* Subtle border */
-    background: none;
-    /* Transparent background */
-}
-
-.btn-outline-warning:hover,
-.btn-outline-secondary:hover {
-    background-color: #C26E41;
-    /* Highlight background on hover */
-    color: #0e0e0e;
-    /* Dark text on hover for contrast */
 }
 
 .btn-primary {
     background-color: #C26E41;
-    /* Primary action button color */
+    /* Primary button color */
     border-color: #C26E41;
-    /* Consistent border with background */
-}
-
-.btn-primary:hover {
-    background-color: #a25033;
-    /* Darker shade on hover for interactivity */
-}
-
-.btn:focus {
-    outline: 2px solid #C26E41;
-    /* Focus outline for accessibility */
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .card {
-        width: 100%;
-        /* Full width for mobile view */
-        margin: 10px 0;
-        /* Margin for spacing */
-    }
+    /* Matching border */
 }

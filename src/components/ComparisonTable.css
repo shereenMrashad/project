@@ -1,0 +1,43 @@
+.comparison-table-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #1c1c1c;
+    /* Dark background */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 10px;
+    border: 1px solid #444;
+    text-align: left;
+    color: #f0f0f0;
+    /* Light text color */
+}
+
+.comparison-table th {
+    background-color: #333;
+    /* Dark header */
+}
+
+.remove-from-compare-btn {
+    background-color: #C26E41;
+    /* Accent color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.remove-from-compare-btn:hover {
+    background-color: #a25033;
+    /* Darker shade on hover */
+}

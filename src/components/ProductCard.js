@@ -12,6 +12,7 @@ function ProductCard({ product, onAddToCart, onAddToWishlist }) {
                 alt={`Image of ${product.name}`}
                 className='card-img'
                 onError={(e) => { e.target.src = '/path/to/default-image.png'; }} // Fallback image
+                loading="lazy" // Optimize loading by lazy loading the image
             />
             <Card.Body className='text-center'>
                 <h5 className='product-name'>{product.name}</h5>
@@ -19,7 +20,7 @@ function ProductCard({ product, onAddToCart, onAddToWishlist }) {
                 <h6 className='product-price'>{product.price}</h6>
                 <div className='product-actions mt-3'>
                     <Link
-                        to={`/product/${product.id}`} // Link to the product details page with the product ID
+                        to={`/product/${product.id}`} // Link to the product details page
                         className="btn btn-outline-secondary me-2"
                         role="button"
                     >

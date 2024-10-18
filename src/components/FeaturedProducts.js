@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import productsData from '../data/products.json';
 import ProductCard from './ProductCard';
 import '../index.css';
+import './FeaturedProducts.css'; // Ensure you have this CSS file for styles
 
 function FeaturedProducts({ selectedCategory, onAddToCart, onAddToWishlist }) {
     const [featuredProducts, setFeaturedProducts] = useState([]);
@@ -11,7 +12,7 @@ function FeaturedProducts({ selectedCategory, onAddToCart, onAddToWishlist }) {
         setLoading(true);
         const filteredProducts = selectedCategory
             ? productsData.products.filter(product => product.category === selectedCategory)
-            : productsData.products.slice(0, 6); // Default products
+            : productsData.products.slice(0, 6); // Default to the first 6 products
 
         setFeaturedProducts(filteredProducts);
         setLoading(false);
@@ -26,7 +27,11 @@ function FeaturedProducts({ selectedCategory, onAddToCart, onAddToWishlist }) {
                 <div className="product-grid">
                     {featuredProducts.map((product) => (
                         <div className="product-item" key={product.id}>
-                            <ProductCard product={product} onAddToCart={onAddToCart} onAddToWishlist={onAddToWishlist} />
+                            <ProductCard
+                                product={product}
+                                onAddToCart={onAddToCart}
+                                onAddToWishlist={onAddToWishlist}
+                            />
                         </div>
                     ))}
                 </div>

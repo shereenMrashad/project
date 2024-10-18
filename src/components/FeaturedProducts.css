@@ -1,0 +1,29 @@
+/* FeaturedProducts.css */
+
+.featured-products {
+    padding: 50px;
+    background-color: #000;
+    /* Dark background for the section */
+    text-align: center;
+    color: #C26E41;
+    /* Accent color for section title */
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    /* Responsive grid */
+    gap: 20px;
+    /* Space between product cards */
+    justify-content: center;
+    /* Center the grid */
+    align-items: stretch;
+    /* Make all cards the same height */
+}
+
+.product-item {
+    display: flex;
+    /* Flexbox for proper alignment */
+    justify-content: center;
+    /* Center card within the grid item */
+}

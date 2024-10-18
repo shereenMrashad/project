@@ -1,114 +1,86 @@
-body {
-    background-color: #000000;
-    /* Darker tone for background */
-    color: #f0f0f0;
-    /* Light text for global consistency */
+/* Featured Products Section */
+.featured-products {
+    padding: 50px;
+    background-color: #000;
+    /* Dark background for the section */
+    text-align: center;
+    color: #C26E41;
+    /* Accent color for the section title */
+    margin: 0 auto;
+    /* Center the section within the container */
+    max-width: 1200px;
+    /* Set a max-width for better alignment */
 }
 
-.card {
-    display: flex;
-    border: 1px solid #000000;
-    /* Subtle border for cards */
-    width: 300px;
-    /* Fixed width for cards */
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    /* Responsive columns */
+    gap: 20px;
+    /* Space between product cards */
     justify-content: center;
-    /* Center content */
-    transition: transform 0.3s ease;
-    /* Animation for hover effect */
-    background-color: #000000;
-    /* Ensure the card background is dark */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    /* Add shadow */
+    /* Center the grid */
+    align-items: stretch;
+    /* Make all cards the same height */
 }
 
-.card:hover {
+/* Product Card Styles */
+.product-card {
+    background-color: #1c1c1c;
+    /* Dark background for the product cards */
+    border: 1px solid #333;
+    /* Subtle border around the cards */
+    padding: 15px;
+    /* Inner padding for spacing */
+    border-radius: 8px;
+    /* Rounded corners for a modern look */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth animation on hover */
+    display: flex;
+    flex-direction: column;
+    /* Stack items vertically */
+    align-items: center;
+    /* Center the content */
+}
+
+.product-card:hover {
     transform: translateY(-5px);
-    /* Slight lift on hover */
+    /* Lift effect on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    /* Shadow effect on hover */
 }
 
-.card-body {
-    background-color: #000000;
-    /* Background color for card body */
-    padding: 20px;
-    /* Padding inside the card */
-}
-
-.product-name {
-    color: white;
-    /* Color for product name */
-    font-weight: bold;
-    /* Bold font for product name */
-    transition: color 0.3s ease;
-    /* Smooth transition for color change */
-}
-
-.product-description {
-    color: #C26E41;
-    /* Light gray for product description (ensure it's light enough) */
-    margin: 10px 0;
-    /* Margin for spacing */
-}
-
-.product-price {
-    color: #f0f0f0;
-    /* Light color for the price */
-    font-weight: bold;
-    /* Make price bold for emphasis */
-}
-
-.product-name:hover {
-    color: #C26E41;
-    /* Change color on hover for product name */
-    cursor: pointer;
-    /* Pointer cursor on hover */
-}
-
-.btn {
+.product-card img {
+    max-width: 100%;
+    /* Ensure the image fits the card */
+    height: 200px;
+    /* Fixed height for uniform card sizes */
+    object-fit: cover;
+    /* Cover the area without distorting the image */
     border-radius: 5px;
-    /* Rounded corners for buttons */
-    padding: 10px 15px;
-    /* Better touch target size for buttons */
+    /* Rounded corners for images */
+    margin-bottom: 10px;
+    /* Space between image and text */
 }
 
-.btn-outline-warning,
-.btn-outline-secondary {
-    color: #f0f0f0;
-    /* Text color for outline buttons */
-    border: 1px solid #030303;
-    /* Border for outline buttons */
+.product-card h5,
+.product-card h6 {
+    margin: 5px 0;
+    /* Spacing between text elements */
 }
 
-.btn-outline-warning:hover,
-.btn-outline-secondary:hover {
-    background-color: #C26E41;
-    /* Change background color on hover */
-    color: #0e0e0e;
-    /* Change text color on hover */
+.product-actions {
+    display: flex;
+    gap: 10px;
+    /* Space between buttons */
+    justify-content: center;
+    /* Center align the buttons */
+    margin-top: auto;
+    /* Align buttons at the bottom of the card */
 }
 
-.btn-primary {
-    background-color: #C26E41;
-    /* Background color for primary button */
-    border-color: #C26E41;
-    /* Border color for primary button */
-}
-
-.btn-primary:hover {
-    background-color: #a25033;
-    /* Darker on hover */
-}
-
-.btn:focus {
-    outline: 2px solid #C26E41;
-    /* Outline for focused buttons */
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-    .card {
-        width: 100%;
-        /* Full width on small screens */
-        margin: 10px 0;
-        /* Add margin */
-    }
+.product-actions .btn {
+    padding: 8px 12px;
+    /* Smaller padding for button sizes */
 }

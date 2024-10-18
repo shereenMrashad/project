@@ -12,6 +12,18 @@
     margin-bottom: 30px;
 }
 
+/* Title styling */
+.filter-section h2 {
+    font-size: 1.8rem;
+    /* Title font size */
+    margin-bottom: 15px;
+    /* Space below the title */
+    color: #C26E41;
+    /* Accent color */
+    text-align: center;
+    /* Center the title */
+}
+
 /* Accordion styling for a more professional look */
 .accordion-item {
     background-color: #333;
@@ -36,6 +48,8 @@
     /* Dark background for collapsed state */
     color: #f0f0f0;
     transition: background-color 0.3s ease;
+    padding: 10px 15px;
+    /* Padding for accordion buttons */
 }
 
 .accordion-button:hover {
@@ -86,19 +100,6 @@ button:hover {
     /* Darker on hover */
     transform: translateY(-2px);
     /* Slight lift effect */
-}
-
-/* Category items hover effect */
-.filter-section h5 {
-    cursor: pointer;
-    transition: color 0.3s ease;
-    padding: 8px 0;
-    font-size: 16px;
-}
-
-.filter-section h5:hover {
-    color: #C26E41;
-    /* Highlight on hover */
 }
 
 /* Apply button styling */

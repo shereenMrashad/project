@@ -27,8 +27,6 @@
     /* Padding for the navbar */
 }
 
-
-
 /* Applying the scroll animation to the moving text */
 .moving-text {
     display: inline-block;
@@ -58,12 +56,11 @@
 
 .navbar-logo img {
     background-color: #343a40;
+    /* Consistent background for logo */
     padding: 2px;
     border-radius: 50%;
     cursor: default;
 }
-
-
 
 /* Styling for the links */
 .navbar-nav .nav-link {
@@ -123,20 +120,14 @@
     padding-top: 50px;
     max-width: 40%;
     margin: auto;
-    /* Make the div take the full width */
-}
-
-.signup-container form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /* Center the form */
 }
 
 /* Title styling */
 .signup-container h2 {
     margin-bottom: 20px;
     color: #D2691E;
+    /* Accent color */
 }
 
 /* Style for each input container */
@@ -159,13 +150,9 @@
     border: 1px solid #D2691E;
     /* Border color */
     width: 100%;
-    /* Fixed width */
+    /* Full width */
     margin-bottom: 10px;
-}
-
-label {
-    margin-right: 20px;
-    margin-bottom: 10px;
+    /* Space between inputs */
 }
 
 /* Focus state for input fields */
@@ -191,7 +178,7 @@ label {
     cursor: pointer;
     /* Pointer cursor on hover */
     margin-top: 20px;
-    width: 100%;
+    /* Space above button */
 }
 
 /* Button hover effect */
@@ -200,28 +187,36 @@ label {
     /* Change color on hover */
 }
 
-/* ----------------------------------------- */
-/* Container styling for the payment page */
+/* Payment Page Styles */
 .payment-page-container {
     background-color: black;
+    /* Dark background for payment page */
     color: white;
+    /* Light text color */
     padding: 40px;
+    /* Padding for content */
     border-radius: 10px;
+    /* Rounded corners */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    /* Shadow for depth */
 }
 
-/* Styling for the payment page heading */
+/* Payment Page Heading */
 .payment-page-container h2 {
     color: #D2691E;
-    /* Dark orange */
+    /* Accent color for heading */
     font-weight: bold;
+    /* Bold text */
     margin-bottom: 20px;
+    /* Space below heading */
     text-align: center;
+    /* Center heading */
 }
 
-/* Label styling for payment method options */
+/* Label styling for payment options */
 .form-check-label {
     font-size: 1.2rem;
+    /* Font size for labels */
     color: white;
     /* Text color */
 }
@@ -229,22 +224,41 @@ label {
 /* Styling for selected radio button */
 .form-check-input:checked {
     background-color: #D2691E;
+    /* Accent color for checked state */
     border-color: #D2691E;
+    /* Border color for checked state */
 }
 
-/* Custom styling for the confirm button */
+/* Confirm Button */
 .custom-payment-button {
     background-color: #D2691E;
+    /* Button background color */
     color: white;
+    /* Button text color */
     border: none;
+    /* No border */
     border-radius: 25px;
+    /* Rounded corners */
     padding: 10px 20px;
+    /* Padding for button */
     font-weight: bold;
+    /* Bold text */
     transition: background-color 0.3s ease;
+    /* Smooth transition */
 }
 
-/* Confirm button hover effect */
+/* Confirm Button Hover Effect */
 .custom-payment-button:hover {
     background-color: #FF6347;
     /* Darker color on hover */
+}
+
+/* Make buttons full width on small screens */
+@media (max-width: 768px) {
+
+    .signup-container,
+    .payment-page-container {
+        max-width: 90%;
+        /* Reduce max width on mobile */
+    }
 }

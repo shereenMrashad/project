@@ -5,8 +5,15 @@
             "name": "Kitchen Table",
             "category": "Tables",
             "price": "$200",
-            "description": "Modern kitchen table, made of high-quality wood.",
-            "image": "/tables/Kitchen Table.png"
+            "description": "Modern kitchen table, made of high-quality wood. ",
+            "image": "https://d.img.vision/nadakhaled/web1-13.jpg",
+            "specifications": {
+                "dimensions": "200 x 90 x 75 cm",
+                "material": "Oak Wood, Steel",
+                "color": "Brown",
+                "assembly": "Assembly required",
+                "warranty": "3 years"
+            }
         },
         {
             "id": 2,
@@ -14,7 +21,14 @@
             "category": "Tables",
             "price": "$350",
             "description": "Spacious dining table with seating for six.",
-            "image": "/tables/Dining Table.png"
+            "specifications": {
+                "dimensions": "100 x 100 x 45 cm",
+                "material": "Oak Wood, Steel",
+                "color": "White",
+                "assembly": "Assembly required",
+                "warranty": "5 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/Bar-manhattan.jpg"
         },
         {
             "id": 3,
@@ -22,7 +36,14 @@
             "category": "Tables",
             "price": "$120",
             "description": "Small, minimalist coffee table perfect for living rooms.",
-            "image": "/tables/Coffee Table.png"
+            "image": "https://d.img.vision/nadakhaled/WEB11.jpg",
+            "specifications": {
+                "dimensions": "180 x 80 x 75 cm",
+                "material": "Pine Wood, Glass",
+                "color": "Green",
+                "assembly": "Assembly required",
+                "warranty": "2 years"
+            }
         },
         {
             "id": 4,
@@ -30,7 +51,14 @@
             "category": "Tables",
             "price": "$180",
             "description": "Study table with multiple drawers and a smooth finish.",
-            "image": "/tables/Writing Desk.png"
+            "image": "https://d.img.vision/nadakhaled/adjustable-table.png",
+            "specifications": {
+                "dimensions": "100 x 100 x 45 cm",
+                "material": "Pine Wood, Glass",
+                "color": "Brown",
+                "assembly": "Assembly required",
+                "warranty": "3 years"
+            }
         },
         {
             "id": 5,
@@ -38,7 +66,14 @@
             "category": "Tables",
             "price": "$220",
             "description": "Round table with a classic wooden design.",
-            "image": "/tables/round-table.png"
+            "image": "https://d.img.vision/nadakhaled/web-13.jpg",
+            "specifications": {
+                "dimensions": "100 x 100 x 45 cm",
+                "material": "Oak Wood, Steel",
+                "color": "Brown",
+                "assembly": "Assembly required",
+                "warranty": "3 years"
+            }
         },
         {
             "id": 6,
@@ -46,7 +81,14 @@
             "category": "Tables",
             "price": "$400",
             "description": "Elegant glass-top table for a modern look.",
-            "image": "/tables/Glass Table.png"
+            "image": "https://d.img.vision/nadakhaled/web-size-template.jpg",
+            "specifications": {
+                "dimensions": "180 x 80 x 75 cm",
+                "material": "Pine Wood, Glass",
+                "color": "Beige",
+                "assembly": "Assembly required",
+                "warranty": "3 years"
+            }
         },
         {
             "id": 7,
@@ -54,7 +96,14 @@
             "category": "Tables",
             "price": "$150",
             "description": "Weather-resistant table ideal for outdoor use.",
-            "image": "/tables/patio-table.png"
+            "specifications": {
+                "dimensions": "120 x 60 x 50 cm",
+                "material": "Oak Wood, Steel",
+                "color": "Brown",
+                "assembly": "Assembly required",
+                "warranty": "2 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/patio-table.png"
         },
         {
             "id": 8,
@@ -62,7 +111,14 @@
             "category": "Tables",
             "price": "$100",
             "description": "Compact and foldable table for versatile usage.",
-            "image": "/tables/folding-table.png"
+            "specifications": {
+                "dimensions": "180 x 80 x 75 cm",
+                "material": "MDF, Metal",
+                "color": "Black",
+                "assembly": "Assembly required",
+                "warranty": "2 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/folding-table.png"
         },
         {
             "id": 9,
@@ -70,7 +126,14 @@
             "category": "Tables",
             "price": "$250",
             "description": "Sleek console table with extra storage space.",
-            "image": "/tables/console-table.png"
+            "specifications": {
+                "dimensions": "200 x 90 x 75 cm",
+                "material": "Oak Wood, Steel",
+                "color": "Green",
+                "assembly": "Assembly required",
+                "warranty": "5 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/console-table.png"
         },
         {
             "id": 10,
@@ -78,7 +141,14 @@
             "category": "Tables",
             "price": "$300",
             "description": "Stylish high-top table for home bars.",
-            "image": "/tables/bar-table.png"
+            "specifications": {
+                "dimensions": "180 x 80 x 75 cm",
+                "material": "Pine Wood, Glass",
+                "color": "Beige",
+                "assembly": "Assembly required",
+                "warranty": "5 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/Kare-coffee.jpg"
         },
         {
             "id": 11,
@@ -86,7 +156,14 @@
             "category": "Mirrors",
             "price": "$120",
             "description": "Elegant vanity mirror with a wooden frame.",
-            "image": "/mirrors/Vanity Mirror.png"
+            "specifications": {
+                "dimensions": "120 x 120 cm",
+                "material": "Frameless, Glass",
+                "color": "Gray",
+                "assembly": "No assembly required",
+                "warranty": "3 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/Vanity_Mirror.png"
         },
         {
             "id": 12,
@@ -94,7 +171,14 @@
             "category": "Mirrors",
             "price": "$250",
             "description": "Large full-length mirror with a metal frame.",
-            "image": "/mirrors/Full-Length Mirror.png"
+            "specifications": {
+                "dimensions": "120 x 120 cm",
+                "material": "Glass, Metal",
+                "color": "Navy Blue",
+                "assembly": "No assembly required",
+                "warranty": "5 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/Full-Length_Mirror.png"
         },
         {
             "id": 13,
@@ -102,7 +186,14 @@
             "category": "Mirrors",
             "price": "$140",
             "description": "Classic round wall mirror for living rooms.",
-            "image": "/mirrors/round-wall-mirror.png"
+            "specifications": {
+                "dimensions": "100 x 80 cm",
+                "material": "Glass, Metal",
+                "color": "White",
+                "assembly": "No assembly required",
+                "warranty": "5 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/round-wall-mirror.png"
         },
         {
             "id": 14,
@@ -110,7 +201,14 @@
             "category": "Mirrors",
             "price": "$180",
             "description": "Artistic decorative mirror with a wooden frame.",
-            "image": "/mirrors/decorative-mirror.png"
+            "specifications": {
+                "dimensions": "150 x 50 cm",
+                "material": "Glass, Metal",
+                "color": "Brown",
+                "assembly": "No assembly required",
+                "warranty": "2 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/decorative-mirror.png"
         },
         {
             "id": 15,
@@ -118,7 +216,14 @@
             "category": "Mirrors",
             "price": "$220",
             "description": "LED illuminated mirror for bathrooms or makeup.",
-            "image": "/mirrors/led-mirror.png"
+            "specifications": {
+                "dimensions": "120 x 120 cm",
+                "material": "Glass, Wood",
+                "color": "Beige",
+                "assembly": "No assembly required",
+                "warranty": "2 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/led-mirror.png"
         },
         {
             "id": 16,
@@ -126,7 +231,14 @@
             "category": "Mirrors",
             "price": "$350",
             "description": "Antique mirror with intricate detailing.",
-            "image": "/mirrors/antique-mirror.png"
+            "specifications": {
+                "dimensions": "150 x 50 cm",
+                "material": "Glass, Metal",
+                "color": "Gray",
+                "assembly": "No assembly required",
+                "warranty": "2 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/antique-mirror.png"
         },
         {
             "id": 17,
@@ -134,7 +246,14 @@
             "category": "Mirrors",
             "price": "$200",
             "description": "Sleek frameless mirror with a minimalistic design.",
-            "image": "/mirrors/frameless-mirror.png"
+            "specifications": {
+                "dimensions": "180 x 60 cm",
+                "material": "Glass, Metal",
+                "color": "White",
+                "assembly": "No assembly required",
+                "warranty": "5 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/frameless-mirror.png"
         },
         {
             "id": 18,
@@ -142,7 +261,14 @@
             "category": "Mirrors",
             "price": "$160",
             "description": "Simple and practical bathroom mirror.",
-            "image": "/mirrors/bathroom-mirror.png"
+            "specifications": {
+                "dimensions": "180 x 60 cm",
+                "material": "Glass, Metal",
+                "color": "Navy Blue",
+                "assembly": "No assembly required",
+                "warranty": "5 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/bathroom-mirror.png"
         },
         {
             "id": 19,
@@ -150,7 +276,14 @@
             "category": "Mirrors",
             "price": "$210",
             "description": "Large decorative wall mirror for hallways.",
-            "image": "/mirrors/wall-mirror.png"
+            "specifications": {
+                "dimensions": "180 x 60 cm",
+                "material": "Glass, Metal",
+                "color": "Green",
+                "assembly": "No assembly required",
+                "warranty": "5 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/wall-mirror.png"
         },
         {
             "id": 20,
@@ -158,7 +291,14 @@
             "category": "Mirrors",
             "price": "$270",
             "description": "Modern mirror with a geometric frame.",
-            "image": "/mirrors/modern-mirror.png"
+            "specifications": {
+                "dimensions": "120 x 120 cm",
+                "material": "Glass, Wood",
+                "color": "Beige",
+                "assembly": "No assembly required",
+                "warranty": "5 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/modern-mirror.png"
         },
         {
             "id": 21,
@@ -166,15 +306,14 @@
             "category": "Mirrors",
             "price": "$400",
             "description": "Vintage-style mirror with a gold frame.",
-            "image": "/mirrors/vintage-mirror.png"
-        },
-        {
-            "id": 22,
-            "name": "Compact Dining Table",
-            "category": "Tables",
-            "price": "$250",
-            "description": "Compact dining table perfect for small spaces.",
-            "image": "/tables/Compact Dining Table.png"
+            "specifications": {
+                "dimensions": "100 x 80 cm",
+                "material": "Glass, Wood",
+                "color": "Navy Blue",
+                "assembly": "No assembly required",
+                "warranty": "3 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/vintage-mirror.png"
         },
         {
             "id": 23,
@@ -182,7 +321,14 @@
             "category": "Tables",
             "price": "$130",
             "description": "Height-adjustable table with a smooth finish.",
-            "image": "/tables/adjustable-table.png"
+            "specifications": {
+                "dimensions": "120 x 60 x 50 cm",
+                "material": "Pine Wood, Glass",
+                "color": "Beige",
+                "assembly": "Assembly required",
+                "warranty": "5 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/adjustable-table.png"
         },
         {
             "id": 24,
@@ -190,7 +336,14 @@
             "category": "Mirrors",
             "price": "$450",
             "description": "Cabinet with a full-length mirror door.",
-            "image": "/mirrors/mirror-cabinet.png"
+            "specifications": {
+                "dimensions": "120 x 120 cm",
+                "material": "Glass, Wood",
+                "color": "White",
+                "assembly": "No assembly required",
+                "warranty": "3 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/mirror-cabinet.png"
         },
         {
             "id": 25,
@@ -198,7 +351,14 @@
             "category": "Tables",
             "price": "$300",
             "description": "Office table with cable management and storage.",
-            "image": "/tables/office-table.png"
+            "specifications": {
+                "dimensions": "200 x 90 x 75 cm",
+                "material": "Oak Wood, Steel",
+                "color": "Beige",
+                "assembly": "Assembly required",
+                "warranty": "5 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/office-table.png"
         },
         {
             "id": 26,
@@ -206,7 +366,14 @@
             "category": "Mirrors",
             "price": "$240",
             "description": "Reclining mirror with a hardwood base.",
-            "image": "/mirrors/reclining-mirror.png"
+            "specifications": {
+                "dimensions": "120 x 120 cm",
+                "material": "Glass, Wood",
+                "color": "White",
+                "assembly": "No assembly required",
+                "warranty": "5 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/reclining-mirror.png"
         },
         {
             "id": 27,
@@ -214,7 +381,14 @@
             "category": "Tables",
             "price": "$150",
             "description": "Small side table, perfect for the living room.",
-            "image": "/tables/side-table.png"
+            "specifications": {
+                "dimensions": "120 x 60 x 50 cm",
+                "material": "MDF, Metal",
+                "color": "Navy Blue",
+                "assembly": "Assembly required",
+                "warranty": "5 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/Prizma-web2.jpg"
         },
         {
             "id": 28,
@@ -222,7 +396,14 @@
             "category": "Tables",
             "price": "$180",
             "description": "Space-saving corner table.",
-            "image": "/tables/corner-table.png"
+            "specifications": {
+                "dimensions": "100 x 100 x 45 cm",
+                "material": "Pine Wood, Glass",
+                "color": "Beige",
+                "assembly": "Assembly required",
+                "warranty": "2 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/corner-table.png"
         },
         {
             "id": 29,
@@ -230,7 +411,14 @@
             "category": "Mirrors",
             "price": "$300",
             "description": "Mirror designed for console tables.",
-            "image": "/mirrors/console-mirror.png"
+            "specifications": {
+                "dimensions": "120 x 120 cm",
+                "material": "Frameless, Glass",
+                "color": "Black",
+                "assembly": "No assembly required",
+                "warranty": "5 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/console-mirror.png"
         },
         {
             "id": 30,
@@ -238,7 +426,14 @@
             "category": "Mirrors",
             "price": "$320",
             "description": "Elegant oval-shaped mirror.",
-            "image": "/mirrors/oval-mirror.png"
+            "specifications": {
+                "dimensions": "180 x 60 cm",
+                "material": "Glass, Metal",
+                "color": "Black",
+                "assembly": "No assembly required",
+                "warranty": "2 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/oval-mirror.png"
         },
         {
             "id": 31,
@@ -246,7 +441,14 @@
             "category": "Clocks",
             "description": "A stylish wall clock with a modern design.",
             "price": "$399",
-            "image": "/clocks/10328439.png"
+            "specifications": {
+                "dimensions": "40 cm diameter",
+                "material": "Metal, Glass",
+                "color": "Green",
+                "assembly": "No assembly required",
+                "warranty": "2 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/703032.jpg"
         },
         {
             "id": 32,
@@ -254,7 +456,14 @@
             "category": "Clocks",
             "description": "A classic clock with a vintage feel.",
             "price": "$213.75",
-            "image": "/clocks/10328441.png"
+            "specifications": {
+                "dimensions": "40 cm diameter",
+                "material": "Metal, Glass",
+                "color": "Gray",
+                "assembly": "No assembly required",
+                "warranty": "5 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/704843.jpg"
         },
         {
             "id": 33,
@@ -262,7 +471,14 @@
             "category": "Clocks",
             "description": "A sleek clock with multiple features.",
             "price": "$500",
-            "image": "/clocks/10328445.png"
+            "specifications": {
+                "dimensions": "50 cm x 70 cm",
+                "material": "Metal, Glass",
+                "color": "Gray",
+                "assembly": "No assembly required",
+                "warranty": "5 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/705436.jpg"
         },
         {
             "id": 34,
@@ -270,7 +486,14 @@
             "category": "Clocks",
             "description": "A rustic clock that fits any room.",
             "price": "$99",
-            "image": "/clocks/10328450.png"
+            "specifications": {
+                "dimensions": "50 cm x 70 cm",
+                "material": "Wood, Plastic",
+                "color": "Black",
+                "assembly": "No assembly required",
+                "warranty": "2 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/703144.jpg"
         },
         {
             "id": 35,
@@ -278,7 +501,14 @@
             "category": "Clocks",
             "description": "A minimalist clock for a modern touch.",
             "price": "$120",
-            "image": "/clocks/10328451.png"
+            "specifications": {
+                "dimensions": "40 cm diameter",
+                "material": "Wood, Plastic",
+                "color": "Green",
+                "assembly": "No assembly required",
+                "warranty": "5 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/705961.jpg"
         },
         {
             "id": 36,
@@ -286,7 +516,14 @@
             "category": "Clocks",
             "description": "Sleek wall clock with a glass frame for a modern touch.",
             "price": 600,
-            "image": "/clocks/circular-clock-indoors-still-life.jpg"
+            "specifications": {
+                "dimensions": "40 cm diameter",
+                "material": "Metal, Glass",
+                "color": "Gray",
+                "assembly": "No assembly required",
+                "warranty": "5 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/705959.jpg"
         },
         {
             "id": 37,
@@ -294,7 +531,14 @@
             "category": "Clocks",
             "description": "Classic wooden wall clock with a vintage design.",
             "price": 8000,
-            "image": "/clocks/pd109-pdobj00419a-image.jpg"
+            "specifications": {
+                "dimensions": "60 cm diameter",
+                "material": "Wood, Plastic",
+                "color": "White",
+                "assembly": "No assembly required",
+                "warranty": "3 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/705901.jpg"
         },
         {
             "id": 38,
@@ -302,7 +546,14 @@
             "category": "Clocks",
             "description": "Elegant wooden wall clock with a timeless design.",
             "price": 9000,
-            "image": "/clocks/pd109-pdobj00424a-image.jpg"
+            "specifications": {
+                "dimensions": "50 cm x 70 cm",
+                "material": "Wood, Plastic",
+                "color": "Gray",
+                "assembly": "No assembly required",
+                "warranty": "3 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/705900.jpg"
         },
         {
             "id": 39,
@@ -310,7 +561,14 @@
             "category": "Clocks",
             "description": "Simple wall clock with a minimalistic design.",
             "price": 250,
-            "image": "/clocks/pexels-iseeghoststoo-1010480.jpg"
+            "specifications": {
+                "dimensions": "40 cm diameter",
+                "material": "Metal, Glass",
+                "color": "Beige",
+                "assembly": "No assembly required",
+                "warranty": "3 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/705306.jpg"
         },
         {
             "id": 40,
@@ -318,7 +576,14 @@
             "category": "Clocks",
             "description": "A vintage style clock that adds character to your space.",
             "price": 3400,
-            "image": "/clocks/pexels-shovyrahman-177154.jpg"
+            "specifications": {
+                "dimensions": "40 cm diameter",
+                "material": "Steel, Wood",
+                "color": "Green",
+                "assembly": "No assembly required",
+                "warranty": "5 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/704937.jpg"
         },
         {
             "id": 41,
@@ -326,7 +591,14 @@
             "category": "Clocks",
             "description": "Luxury wall clock with an elegant design and premium finish.",
             "price": 750,
-            "image": "/clocks/square-clock-indoors-still-life.jpg"
+            "specifications": {
+                "dimensions": "40 cm diameter",
+                "material": "Metal, Glass",
+                "color": "White",
+                "assembly": "No assembly required",
+                "warranty": "3 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/704202.jpg"
         },
         {
             "id": 42,
@@ -334,7 +606,14 @@
             "category": "Clocks",
             "description": "A luxury clock with gold accents.",
             "price": 900,
-            "image": "/clocks/vintage-day-analog-circle-course.jpg"
+            "specifications": {
+                "dimensions": "60 cm diameter",
+                "material": "Steel, Wood",
+                "color": "Beige",
+                "assembly": "No assembly required",
+                "warranty": "5 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/705458.jpg"
         },
         {
             "id": 43,
@@ -342,7 +621,14 @@
             "category": "Pillows",
             "price": "$15",
             "description": "Soft throw pillow for your couch.",
-            "image": "/pillows/1.png"
+            "specifications": {
+                "dimensions": "60 x 60 cm",
+                "material": "Cotton, Polyester",
+                "color": "Beige",
+                "assembly": "No assembly required",
+                "warranty": "5 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/41mwzwxSLAL._AC_.jpg"
         },
         {
             "id": 44,
@@ -350,7 +636,14 @@
             "category": "Pillows",
             "price": "$20",
             "description": "Comfortable cushion pillow for support.",
-            "image": "/pillows/2.png"
+            "specifications": {
+                "dimensions": "60 x 60 cm",
+                "material": "Down, Linen",
+                "color": "Beige",
+                "assembly": "No assembly required",
+                "warranty": "5 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/51-7W5RkxbL._AC_SX679_.jpg"
         },
         {
             "id": 45,
@@ -358,7 +651,14 @@
             "category": "Pillows",
             "price": "$30",
             "description": "Stylish decorative pillow for any room.",
-            "image": "/pillows/3.png"
+            "specifications": {
+                "dimensions": "45 x 45 cm",
+                "material": "Memory Foam, Silk",
+                "color": "Brown",
+                "assembly": "No assembly required",
+                "warranty": "5 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/61DV2HVyvYL._AC_SL1000_.jpg"
         },
         {
             "id": 46,
@@ -366,7 +666,14 @@
             "category": "Pillows",
             "price": "$40",
             "description": "High-quality memory foam pillow for comfort.",
-            "image": "/pillows/4.png"
+            "specifications": {
+                "dimensions": "60 x 60 cm",
+                "material": "Cotton, Polyester",
+                "color": "Navy Blue",
+                "assembly": "No assembly required",
+                "warranty": "5 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/61f2kNGcRXL._AC_SL1500_.jpg"
         },
         {
             "id": 47,
@@ -374,15 +681,14 @@
             "category": "Pillows",
             "price": "$60",
             "description": "Luxurious silk pillow for a touch of elegance.",
-            "image": "/pillows/5.png"
-        },
-        {
-            "id": 48,
-            "name": "Sectional Sofa",
-            "category": "Sofas",
-            "price": "$700",
-            "description": "Spacious sectional sofa for large living rooms.",
-            "image": "/sofas/11288301.png"
+            "specifications": {
+                "dimensions": "50 x 50 cm",
+                "material": "Memory Foam, Silk",
+                "color": "Green",
+                "assembly": "No assembly required",
+                "warranty": "2 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/61bHyFVAqZL._AC_SL1500_.jpg"
         },
         {
             "id": 49,
@@ -390,7 +696,14 @@
             "category": "Sofas",
             "price": "$900",
             "description": "Luxurious leather sofa with a modern design.",
-            "image": "/sofas/11288306.png"
+            "specifications": {
+                "dimensions": "220 x 80 x 85 cm",
+                "material": "Fabric, Wood",
+                "color": "Green",
+                "assembly": "No assembly required",
+                "warranty": "5 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/Taylor-web5.jpg"
         },
         {
             "id": 50,
@@ -398,7 +711,14 @@
             "category": "Sofas",
             "price": "$800",
             "description": "Versatile sleeper sofa that doubles as a bed.",
-            "image": "/sofas/11288311.png"
+            "specifications": {
+                "dimensions": "300 x 120 x 90 cm",
+                "material": "Leather, Foam",
+                "color": "Navy Blue",
+                "assembly": "No assembly required",
+                "warranty": "3 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/Romeo-relax-web-white.jpg"
         },
         {
             "id": 51,
@@ -406,7 +726,14 @@
             "category": "Sofas",
             "price": "$650",
             "description": "Comfortable recliner sofa for ultimate relaxation.",
-            "image": "/sofas/11288312.png"
+            "specifications": {
+                "dimensions": "300 x 120 x 90 cm",
+                "material": "Fabric, Wood",
+                "color": "Navy Blue",
+                "assembly": "No assembly required",
+                "warranty": "2 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/L_clair-2.jpg"
         },
         {
             "id": 52,
@@ -414,7 +741,14 @@
             "category": "Sofas",
             "price": "$400",
             "description": "Cozy loveseat for two.",
-            "image": "/sofas/11288314.png"
+            "specifications": {
+                "dimensions": "300 x 120 x 90 cm",
+                "material": "Velvet, Foam",
+                "color": "Navy Blue",
+                "assembly": "No assembly required",
+                "warranty": "3 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/Hiphop-sofa-web-5.jpg"
         },
         {
             "id": 53,
@@ -422,7 +756,14 @@
             "category": "Sofas",
             "price": "$500",
             "description": "Stylish fabric sofa with soft cushions.",
-            "image": "/sofas/11288314.png"
+            "specifications": {
+                "dimensions": "300 x 120 x 90 cm",
+                "material": "Velvet, Foam",
+                "color": "Brown",
+                "assembly": "No assembly required",
+                "warranty": "2 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/Fleur-1.jpg"
         },
         {
             "id": 54,
@@ -430,7 +771,14 @@
             "category": "Sofas",
             "price": "$750",
             "description": "L-shaped sofa perfect for corner spaces.",
-            "image": "/sofas/11288314.png"
+            "specifications": {
+                "dimensions": "220 x 80 x 85 cm",
+                "material": "Fabric, Wood",
+                "color": "Brown",
+                "assembly": "No assembly required",
+                "warranty": "5 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/7-1.jpg"
         },
         {
             "id": 55,
@@ -438,7 +786,14 @@
             "category": "Sofas",
             "price": "$450",
             "description": "Elegant chaise lounge for relaxing.",
-            "image": "/sofas/11288343.png"
+            "specifications": {
+                "dimensions": "300 x 120 x 90 cm",
+                "material": "Fabric, Wood",
+                "color": "Gray",
+                "assembly": "No assembly required",
+                "warranty": "2 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/4-5.jpg"
         },
         {
             "id": 56,
@@ -446,7 +801,14 @@
             "category": "Sofas",
             "price": "$550",
             "description": "Functional sofa bed for guests.",
-            "image": "/sofas/11288363.png"
+            "specifications": {
+                "dimensions": "300 x 120 x 90 cm",
+                "material": "Leather, Foam",
+                "color": "White",
+                "assembly": "No assembly required",
+                "warranty": "3 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/1-1.jpg"
         },
         {
             "id": 57,
@@ -454,7 +816,14 @@
             "category": "Chairs",
             "description": "A stylish Grey Chair with a modern design.",
             "price": 100,
-            "image": "/chairs/beautiful-shot-stylish-grey-chair-isolated-white-background (1).jpg"
+            "specifications": {
+                "dimensions": "50 x 50 x 90 cm",
+                "material": "Fabric, Wood",
+                "color": "Gray",
+                "assembly": "Assembly required",
+                "warranty": "3 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/beautiful-shot-stylish-grey-chair-isolated-white-background_(1).jpg"
         },
         {
             "id": 58,
@@ -462,7 +831,14 @@
             "category": "Chairs",
             "description": "A Crazy Chair From Space.",
             "price": 500,
-            "image": "/chairs/bubble-chair-isolated-transparent-background_191095-12894.jpg"
+            "specifications": {
+                "dimensions": "50 x 50 x 90 cm",
+                "material": "Fabric, Wood",
+                "color": "Navy Blue",
+                "assembly": "Assembly required",
+                "warranty": "2 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/coco-3.jpg"
         },
         {
             "id": 59,
@@ -470,7 +846,14 @@
             "category": "Chairs",
             "description": "A Vintage Chair for Classic Lovers .",
             "price": 1500,
-            "image": "/chairs/chair-3961572_1280.webp"
+            "specifications": {
+                "dimensions": "60 x 60 x 110 cm",
+                "material": "Plastic, Aluminum",
+                "color": "Gray",
+                "assembly": "Assembly required",
+                "warranty": "2 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/chair-3961572_1280.jpg"
         },
         {
             "id": 60,
@@ -478,7 +861,14 @@
             "category": "Chairs",
             "description": "Green chair that will fit Perfectly with Boho Style.",
             "price": 600,
-            "image": "/chairs/chair-3961592_1280.webp"
+            "specifications": {
+                "dimensions": "45 x 55 x 85 cm",
+                "material": "Fabric, Wood",
+                "color": "Gray",
+                "assembly": "Assembly required",
+                "warranty": "3 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/chair-3961592_1280.jpg"
         },
         {
             "id": 61,
@@ -486,15 +876,29 @@
             "category": "Chairs",
             "description": "Classic old fashonied Chair.",
             "price": 800,
-            "image": "/chairs/chair-4070161_1280.webp"
+            "specifications": {
+                "dimensions": "45 x 55 x 85 cm",
+                "material": "Plastic, Aluminum",
+                "color": "Navy Blue",
+                "assembly": "Assembly required",
+                "warranty": "3 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/chair-4070161_1280.jpg"
         },
         {
             "id": 62,
-            "name": "Purple Wooden Chair",
+            "name": " Wooden Chair",
             "category": "Chairs",
             "description": " wooden Chair for Fun Lovers .",
             "price": 250,
-            "image": "/chairs/clipped-purple-rocking-chair-isolated-transparent-background_191095-18008.jpg"
+            "specifications": {
+                "dimensions": "60 x 60 x 110 cm",
+                "material": "Leather, Foam, Metal",
+                "color": "Green",
+                "assembly": "Assembly required",
+                "warranty": "3 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/adjusted2.jpg"
         },
         {
             "id": 63,
@@ -502,23 +906,14 @@
             "category": "Chairs",
             "description": "Over size Chair for relaxing ZZzz.",
             "price": 110,
-            "image": "/chairs/oversized-4586851_1280.webp"
-        },
-        {
-            "id": 64,
-            "name": "Beig Chair",
-            "category": "Chairs",
-            "description": " a well crafted dinner table chair that fit in any style.",
-            "price": 600,
-            "image": "/chairs/parsons-chair-isolated-transparent-background_191095-13659.avif"
-        },
-        {
-            "id": 65,
-            "name": "Orange Chair",
-            "category": "Chairs",
-            "description": "Luxury Chair with an elegant design and premium finish.",
-            "price": 850,
-            "image": "/chairs/wingback-chair-isolated-transparent-background_191095-13733.avif"
+            "specifications": {
+                "dimensions": "60 x 60 x 110 cm",
+                "material": "Fabric, Wood",
+                "color": "Beige",
+                "assembly": "Assembly required",
+                "warranty": "3 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/oversized-4586851_1280.jpg"
         },
         {
             "id": 66,
@@ -526,7 +921,14 @@
             "category": "Chairs",
             "description": "it Will Help you to study and finish your work.",
             "price": 820,
-            "image": "/chairs/chair-4281511_1280.webp"
+            "specifications": {
+                "dimensions": "60 x 60 x 110 cm",
+                "material": "Plastic, Aluminum",
+                "color": "Green",
+                "assembly": "Assembly required",
+                "warranty": "5 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/chair-4281511_1280.jpg"
         },
         {
             "id": 67,
@@ -534,7 +936,14 @@
             "category": "Chairs",
             "description": "this Chair Acts as a lazy boy .",
             "price": 900,
-            "image": "/chairs/rocker-4004161_1280.webp"
+            "specifications": {
+                "dimensions": "45 x 55 x 85 cm",
+                "material": "Plastic, Aluminum",
+                "color": "Navy Blue",
+                "assembly": "Assembly required",
+                "warranty": "5 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/rocker-4004161_1280.jpg"
         },
         {
             "id": 68,
@@ -542,7 +951,14 @@
             "description": " featuring a luxurious bed, spacious closet, two night stands, and a dresser - all made from high-quality lumber boards.",
             "category": "Bedroom",
             "price": 3500,
-            "image": "/bed photo main/bed room -1.jpg"
+            "specifications": {
+                "dimensions": "300 x 200 x 100 cm",
+                "material": "Wood, Upholstery",
+                "color": "Green",
+                "assembly": "Assembly required",
+                "warranty": "5 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/bed_room_-1.jpg"
         },
         {
             "id": 69,
@@ -550,7 +966,14 @@
             "description": "a cozy and functional addition to any bedroom. With its comfortable design, it provides a cozy atmosphere for a good night's sleep.",
             "category": "Bedroom",
             "price": 2500,
-            "image": "/bed photo main/bed room -2.jpg"
+            "specifications": {
+                "dimensions": "320 x 220 x 110 cm",
+                "material": "Leather, Fabric",
+                "color": "Beige",
+                "assembly": "Assembly required",
+                "warranty": "5 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/bed_room_-2.jpg"
         },
         {
             "id": 70,
@@ -558,7 +981,14 @@
             "description": "provides both function and style. The sturdy frame ensures durability while the comfortable upholstered.Enhance your sleeping experience with this expertly designed bedroom set.",
             "category": "Bedroom",
             "price": 4500,
-            "image": "/bed photo main/bed-room-3.jpg"
+            "specifications": {
+                "dimensions": "320 x 220 x 110 cm",
+                "material": "Wood, Upholstery",
+                "color": "Black",
+                "assembly": "Assembly required",
+                "warranty": "2 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/bed_room_3.jpg"
         },
         {
             "id": 71,
@@ -566,7 +996,14 @@
             "description": " featuring a luxurious bed, spacious closet, two night stands, and a dresser - all made from high-quality lumber boards.",
             "category": "Bedroom",
             "price": 4000,
-            "image": "/bed photo main/bed room 4.jpg"
+            "specifications": {
+                "dimensions": "320 x 220 x 110 cm",
+                "material": "Pine Wood, MDF",
+                "color": "Beige",
+                "assembly": "Assembly required",
+                "warranty": "3 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/bed_room_4.jpg"
         },
         {
             "id": 72,
@@ -574,7 +1011,14 @@
             "description": "The sturdy frame ensures durability while the comfortable upholstered head board adds a touch of luxury to your bedroom",
             "category": "Bedroom",
             "price": 3500,
-            "image": "/bed photo main/bed room-5.jpg"
+            "specifications": {
+                "dimensions": "300 x 200 x 100 cm",
+                "material": "Wood, Upholstery",
+                "color": "Brown",
+                "assembly": "Assembly required",
+                "warranty": "3 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/bed_room-5.jpg"
         },
         {
             "id": 73,
@@ -582,7 +1026,14 @@
             "description": "a stylish and cozy upholstered bed that includes a closet, two commodes, and a dresser.",
             "category": "Bedroom",
             "price": 2500,
-            "image": "/bed photo main/bed room-6.jpg"
+            "specifications": {
+                "dimensions": "320 x 220 x 110 cm",
+                "material": "Wood, Upholstery",
+                "color": "White",
+                "assembly": "Assembly required",
+                "warranty": "2 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/bed_room-6.jpg"
         },
         {
             "id": 74,
@@ -590,7 +1041,14 @@
             "description": "offers a comfortable, minimalist design that promotes relaxation and functionality.",
             "category": "Bedroom",
             "price": 500,
-            "image": "/bed photo main/bed 7.jpg"
+            "specifications": {
+                "dimensions": "300 x 200 x 100 cm",
+                "material": "Leather, Fabric",
+                "color": "White",
+                "assembly": "Assembly required",
+                "warranty": "2 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/bed_7.jpg"
         },
         {
             "id": 75,
@@ -598,7 +1056,14 @@
             "description": "offers a comfortable and luxurious sleeping experience, thanks to its high-quality design. With a focus on comfort and durability.",
             "category": "Bedroom",
             "price": 1000,
-            "image": "/bed photo main/bed 8.jpg"
+            "specifications": {
+                "dimensions": "300 x 200 x 100 cm",
+                "material": "Wood, Upholstery",
+                "color": "Green",
+                "assembly": "Assembly required",
+                "warranty": "2 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/bed_8.jpg"
         },
         {
             "id": 76,
@@ -606,7 +1071,14 @@
             "description": "This high quality bed, designed by experts, promises a peaceful sleep every night.",
             "category": "Bedroom",
             "price": 1500,
-            "image": "/bed photo main/bed 9.jpg"
+            "specifications": {
+                "dimensions": "280 x 210 x 90 cm",
+                "material": "Wood, Upholstery",
+                "color": "Black",
+                "assembly": "Assembly required",
+                "warranty": "5 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/bed_9.jpg"
         },
         {
             "id": 77,
@@ -614,87 +1086,164 @@
             "description": "This high quality bed, designed by experts, promises a peaceful sleep every night.",
             "category": "Bedroom",
             "price": 2000,
-            "image": "/bed photo main/bed10.jpg"
+            "specifications": {
+                "dimensions": "320 x 220 x 110 cm",
+                "material": "Leather, Fabric",
+                "color": "Black",
+                "assembly": "Assembly required",
+                "warranty": "5 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/bed10.jpg"
         },
         {
             "id": 78,
             "name": "Living Luxe",
             "description": " a beautifully designed living room that combines elegance and comfort.",
-            "category": "LivingRoom",
+            "category": "Living Room",
             "price": 3000,
-            "image": "/living main img/living1.jpg"
+            "specifications": {
+                "dimensions": "350 x 300 cm",
+                "material": "Leather, Glass",
+                "color": "Navy Blue",
+                "assembly": "Assembly required",
+                "warranty": "5 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/living1.jpg"
         },
         {
             "id": 79,
             "name": "Cozy Corner",
             "description": "a beautifully designed living room that combines elegance and comfort",
-            "category": "LivingRoom",
+            "category": "Living Room",
             "price": 2000,
-            "image": "/living main img/living2.jpg"
+            "specifications": {
+                "dimensions": "400 x 350 cm",
+                "material": "Wood, Fabric",
+                "color": "White",
+                "assembly": "Assembly required",
+                "warranty": "3 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/living2.jpg"
         },
         {
             "id": 80,
             "name": "Urban Haven",
             "description": "a beautifully designed living room that combines elegance and comfort",
-            "category": "LivingRoom",
+            "category": "Living Room",
             "price": 1500,
-            "image": "/living main img/living3.jpg"
+            "specifications": {
+                "dimensions": "350 x 300 cm",
+                "material": "Wood, Fabric",
+                "color": "Gray",
+                "assembly": "Assembly required",
+                "warranty": "5 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/living3.jpg"
         },
         {
             "id": 81,
             "name": "Serenity",
             "description": "a beautifully designed living room that combines elegance and comfort",
-            "category": "LivingRoom",
+            "category": "Living Room",
             "price": 2500,
-            "image": "/living main img/living4.jpg"
+            "specifications": {
+                "dimensions": "350 x 300 cm",
+                "material": "Wood, Metal",
+                "color": "Black",
+                "assembly": "Assembly required",
+                "warranty": "2 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/living4.jpg"
         },
         {
             "id": 82,
             "name": "Design Den",
             "description": "a beautifully designed living room that combines elegance and comfort",
-            "category": "LivingRoom",
+            "category": "Living Room",
             "price": 3500,
-            "image": "/living main img/living5.jpg"
+            "specifications": {
+                "dimensions": "380 x 320 cm",
+                "material": "Wood, Metal",
+                "color": "Beige",
+                "assembly": "Assembly required",
+                "warranty": "2 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/living5.jpg"
         },
         {
             "id": 83,
             "name": "Gather & Relax",
             "description": "a beautifully designed living room that combines elegance and comfort",
-            "category": "LivingRoom",
+            "category": "Living Room",
             "price": 4500,
-            "image": "/living main img/living6.jpg"
+            "specifications": {
+                "dimensions": "380 x 320 cm",
+                "material": "Wood, Metal",
+                "color": "Beige",
+                "assembly": "Assembly required",
+                "warranty": "2 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/living6.jpg"
         },
         {
             "id": 84,
             "name": "Home Harmony",
             "description": "a beautifully designed living room that combines elegance and comfort",
-            "category": "LivingRoom",
+            "category": "Living Room",
             "price": 5500,
-            "image": "/living main img/living7.jpg"
+            "specifications": {
+                "dimensions": "380 x 320 cm",
+                "material": "Wood, Fabric",
+                "color": "White",
+                "assembly": "Assembly required",
+                "warranty": "2 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/living7.jpg"
         },
         {
             "id": 85,
             "name": "Lively Living",
             "description": "a beautifully designed living room that combines elegance and comfort",
-            "category": "LivingRoom",
+            "category": "Living Room",
             "price": 6000,
-            "image": "/living main img/living8.jpg"
+            "specifications": {
+                "dimensions": "380 x 320 cm",
+                "material": "Wood, Metal",
+                "color": "Beige",
+                "assembly": "Assembly required",
+                "warranty": "5 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/living8.jpg"
         },
         {
             "id": 86,
             "name": "Tranquil Retreat",
             "description": "a beautifully designed living room that combines elegance and comfort",
-            "category": "LivingRoom",
+            "category": "Living Room",
             "price": 7500,
-            "image": "/living main img/living9.jpg"
+            "specifications": {
+                "dimensions": "380 x 320 cm",
+                "material": "Wood, Fabric",
+                "color": "Black",
+                "assembly": "Assembly required",
+                "warranty": "5 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/nadakhaled_living9.jpg"
         },
         {
             "id": 87,
             "name": "Serene Sitting",
             "description": "a beautifully designed living room that combines elegance and comfort",
-            "category": "LivingRoom",
+            "category": "Living Room",
             "price": 3000,
-            "image": "/living main img/living10.jpg"
+            "specifications": {
+                "dimensions": "350 x 300 cm",
+                "material": "Leather, Glass",
+                "color": "Gray",
+                "assembly": "Assembly required",
+                "warranty": "5 years"
+            },
+            "image": "https://d.img.vision/nadakhaled/living10.jpg"
         }
     ]
 }

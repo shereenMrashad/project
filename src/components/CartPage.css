@@ -1,3 +1,5 @@
+/* CartPage.css */
+
 .cart-page {
     padding: 50px;
     /* Spacing around the cart page */
@@ -9,12 +11,16 @@
     /* Full height of the viewport */
 }
 
+/* Title Styling */
 .cart-page h2 {
     text-align: center;
     margin-bottom: 30px;
     /* Space below the title */
+    font-weight: bold;
+    /* Emphasize title */
 }
 
+/* Cart Items Container */
 .cart-items {
     display: flex;
     /* Use flexbox for layout */
@@ -24,13 +30,17 @@
     /* Center the items */
 }
 
+/* Individual Cart Item */
 .cart-item {
     margin: 10px;
     /* Space between items */
     flex: 1 1 300px;
     /* Flex-grow, flex-shrink, flex-basis for responsive design */
+    max-width: 350px;
+    /* Max width for cart items */
 }
 
+/* Card Styling */
 .card {
     background-color: #1c1c1c;
     /* Dark background for the card */
@@ -38,27 +48,36 @@
     /* Rounded corners */
     overflow: hidden;
     /* Prevent overflow */
-    transition: transform 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s;
     /* Transition for hover effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    /* Subtle shadow for depth */
 }
 
 .card:hover {
     transform: scale(1.05);
     /* Slight scale on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+    /* Enhanced shadow on hover */
 }
 
+/* Image Styling */
 .card-img-top {
     width: 100%;
     /* Make image fill the card width */
     height: auto;
     /* Maintain aspect ratio */
+    object-fit: cover;
+    /* Ensure image covers the card area */
 }
 
+/* Card Body Styling */
 .card-body {
     padding: 15px;
     /* Padding inside the card body */
 }
 
+/* Card Title */
 .card-title {
     font-size: 1.25rem;
     /* Larger font size for product name */
@@ -66,6 +85,7 @@
     /* Accent color */
 }
 
+/* Price Text */
 .card-text {
     font-size: 1rem;
     /* Font size for price */
@@ -73,6 +93,7 @@
     /* Light text color for price */
 }
 
+/* Button Styling */
 .btn {
     background-color: #C26E41;
     /* Button background color */
@@ -90,11 +111,13 @@
     /* Smooth transition for hover effect */
 }
 
+/* Button Hover Effect */
 .btn:hover {
     background-color: #a45b33;
     /* Darker shade for hover effect */
 }
 
+/* Total Price Styling */
 .total-price {
     text-align: center;
     /* Center the total price */
@@ -102,4 +125,6 @@
     /* Space above total price */
     font-size: 1.5rem;
     /* Larger font size for total price */
+    font-weight: bold;
+    /* Bold for emphasis */
 }

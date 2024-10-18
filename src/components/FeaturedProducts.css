@@ -1,29 +1,32 @@
 /* FeaturedProducts.css */
 
 .featured-products {
-    padding: 50px;
+    padding: 50px 20px;
     background-color: #000;
-    /* Dark background for the section */
-    text-align: center;
+    /* Dark background */
     color: #C26E41;
-    /* Accent color for section title */
+    /* Accent color for headings */
+}
+
+.featured-products h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    /* Larger font for headings */
 }
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    /* Responsive grid */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
-    /* Space between product cards */
-    justify-content: center;
-    /* Center the grid */
-    align-items: stretch;
-    /* Make all cards the same height */
+    /* Space between items */
 }
 
 .product-item {
-    display: flex;
-    /* Flexbox for proper alignment */
-    justify-content: center;
-    /* Center card within the grid item */
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+    /* Slightly enlarge on hover */
 }

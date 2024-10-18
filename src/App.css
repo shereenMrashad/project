@@ -1,4 +1,12 @@
 /* Global styles */
+:root {
+    --primary-color: #C26E41;
+    --secondary-color: #f0f0f0;
+    --dark-bg: #000000;
+    --card-bg: #1c1c1c;
+    --text-color: #e0e0e0;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;

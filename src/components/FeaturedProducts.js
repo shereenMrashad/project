@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import productsData from '../data/products.json';
+import productsData from '../data/products.json'; // Ensure the correct path to your JSON file
 import ProductCard from './ProductCard';
 import '../index.css';
 import './FeaturedProducts.css'; // Ensure you have this CSS file for styles
@@ -9,7 +9,6 @@ function FeaturedProducts({ selectedCategory, onAddToCart, onAddToWishlist }) {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        setLoading(true);
         const filteredProducts = selectedCategory
             ? productsData.products.filter(product => product.category === selectedCategory)
             : productsData.products.slice(0, 6); // Default to the first 6 products

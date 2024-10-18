@@ -1,86 +1,137 @@
-/* Featured Products Section */
-.featured-products {
-    padding: 50px;
-    background-color: #000;
-    /* Dark background for the section */
-    text-align: center;
-    color: #C26E41;
-    /* Accent color for the section title */
-    margin: 0 auto;
-    /* Center the section within the container */
-    max-width: 1200px;
-    /* Set a max-width for better alignment */
+/* Global Styles */
+body {
+    background-color: #000000;
+    /* Dark background for consistency */
+    color: #f0f0f0;
+    /* Light text color for readability */
+    font-family: 'Arial', sans-serif;
+    /* Consistent font */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Product Grid */
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    /* Responsive columns */
-    gap: 20px;
-    /* Space between product cards */
-    justify-content: center;
-    /* Center the grid */
-    align-items: stretch;
-    /* Make all cards the same height */
-}
-
-/* Product Card Styles */
-.product-card {
-    background-color: #1c1c1c;
-    /* Dark background for the product cards */
-    border: 1px solid #333;
-    /* Subtle border around the cards */
-    padding: 15px;
-    /* Inner padding for spacing */
-    border-radius: 8px;
-    /* Rounded corners for a modern look */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    /* Smooth animation on hover */
+/* Card Styles */
+.card {
     display: flex;
     flex-direction: column;
-    /* Stack items vertically */
+    /* Stack items vertically in the card */
     align-items: center;
-    /* Center the content */
+    /* Center content */
+    border: 1px solid #222;
+    /* Slight border for card separation */
+    width: 300px;
+    /* Fixed width for uniformity */
+    background-color: #000000;
+    /* Ensure the card background matches the dark theme */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth hover animation */
+    margin: 15px;
+    /* Spacing between cards */
 }
 
-.product-card:hover {
+.card:hover {
     transform: translateY(-5px);
-    /* Lift effect on hover */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
-    /* Shadow effect on hover */
+    /* Lift on hover for interactivity */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8);
+    /* Enhanced shadow effect on hover */
 }
 
-.product-card img {
-    max-width: 100%;
-    /* Ensure the image fits the card */
-    height: 200px;
-    /* Fixed height for uniform card sizes */
-    object-fit: cover;
-    /* Cover the area without distorting the image */
+.card-body {
+    background-color: #000000;
+    /* Dark background for the card body */
+    padding: 20px;
+    /* Inner padding for content spacing */
+    text-align: center;
+    /* Center text alignment */
+}
+
+/* Product Text Styles */
+.product-name {
+    color: #f0f0f0;
+    /* Light color for product name */
+    font-weight: bold;
+    /* Emphasize the product name */
+    transition: color 0.3s ease;
+    /* Smooth color transition */
+}
+
+.product-name:hover {
+    color: #C26E41;
+    /* Accent color on hover for the product name */
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+}
+
+.product-description {
+    color: #C26E41;
+    /* Accent color for the product description */
+    margin: 10px 0;
+    /* Spacing for readability */
+}
+
+.product-price {
+    color: #f0f0f0;
+    /* Light color for the price */
+    font-weight: bold;
+    /* Make price bold for emphasis */
+}
+
+/* Button Styles */
+.btn {
     border-radius: 5px;
-    /* Rounded corners for images */
-    margin-bottom: 10px;
-    /* Space between image and text */
-}
-
-.product-card h5,
-.product-card h6 {
-    margin: 5px 0;
-    /* Spacing between text elements */
-}
-
-.product-actions {
-    display: flex;
-    gap: 10px;
+    /* Rounded corners for a modern look */
+    padding: 10px 15px;
+    /* Adequate padding for larger touch areas */
+    margin: 5px;
     /* Space between buttons */
-    justify-content: center;
-    /* Center align the buttons */
-    margin-top: auto;
-    /* Align buttons at the bottom of the card */
+    cursor: pointer;
+    /* Pointer cursor for all buttons */
 }
 
-.product-actions .btn {
-    padding: 8px 12px;
-    /* Smaller padding for button sizes */
+.btn-outline-warning,
+.btn-outline-secondary {
+    color: #f0f0f0;
+    /* Light color for outline buttons */
+    border: 1px solid #333;
+    /* Subtle border */
+    background: none;
+    /* Transparent background */
+}
+
+.btn-outline-warning:hover,
+.btn-outline-secondary:hover {
+    background-color: #C26E41;
+    /* Highlight background on hover */
+    color: #0e0e0e;
+    /* Dark text on hover for contrast */
+}
+
+.btn-primary {
+    background-color: #C26E41;
+    /* Primary action button color */
+    border-color: #C26E41;
+    /* Consistent border with background */
+}
+
+.btn-primary:hover {
+    background-color: #a25033;
+    /* Darker shade on hover for interactivity */
+}
+
+.btn:focus {
+    outline: 2px solid #C26E41;
+    /* Focus outline for accessibility */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        /* Full width for mobile view */
+        margin: 10px 0;
+        /* Margin for spacing */
+    }
 }

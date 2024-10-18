@@ -1,3 +1,5 @@
+/* ComparisonTable.css */
+
 .comparison-table-container {
     margin-top: 20px;
     padding: 20px;
@@ -5,6 +7,8 @@
     /* Dark background */
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    overflow-x: auto;
+    /* Allows horizontal scrolling on small screens */
 }
 
 .comparison-table {
@@ -15,18 +19,18 @@
 .comparison-table th,
 .comparison-table td {
     background-color: #c26e41;
+    /* Accent color for cells */
     color: white;
     border: none;
     border-radius: 5px;
     padding: 10px 15px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-top: 10px;
 }
 
+/* Dark header */
 .comparison-table th {
     background-color: #333;
-    /* Dark header */
 }
 
 .remove-from-compare-btn {
@@ -43,4 +47,84 @@
 .remove-from-compare-btn:hover {
     background-color: #a25033;
     /* Darker shade on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .comparison-table-container {
+        padding: 10px;
+        /* Reduce padding on smaller screens */
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+        padding: 8px 10px;
+        /* Smaller padding for table cells */
+        font-size: 0.9rem;
+        /* Slightly smaller font size */
+    }
+
+    /* Stack cells vertically on mobile */
+    .comparison-table {
+        display: block;
+        overflow-x: auto;
+        /* Allow horizontal scrolling */
+    }
+
+    .comparison-table thead,
+    .comparison-table tbody,
+    .comparison-table th,
+    .comparison-table td,
+    .comparison-table tr {
+        display: block;
+        /* Each row as block to stack vertically */
+    }
+
+    .comparison-table th {
+        position: absolute;
+        /* Fix header to the top */
+        left: -9999px;
+        /* Hide it */
+    }
+
+    .comparison-table td {
+        border: 1px solid #ddd;
+        /* Light border for visibility */
+        position: relative;
+        padding-left: 50%;
+        /* Add padding for labels */
+        text-align: left;
+        /* Align text to the left */
+    }
+
+    .comparison-table td:before {
+        position: absolute;
+        /* Label positioning */
+        left: 10px;
+        /* Space from the left */
+        white-space: nowrap;
+        /* Prevent text from wrapping */
+        font-weight: bold;
+        /* Bold labels */
+    }
+
+    .comparison-table td:nth-of-type(1):before {
+        content: "Product";
+    }
+
+    .comparison-table td:nth-of-type(2):before {
+        content: "Price";
+    }
+
+    .comparison-table td:nth-of-type(3):before {
+        content: "Dimensions";
+    }
+
+    .comparison-table td:nth-of-type(4):before {
+        content: "Material";
+    }
+
+    .comparison-table td:nth-of-type(5):before {
+        content: "Color";
+    }
 }

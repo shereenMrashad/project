@@ -1,20 +1,21 @@
 .hero {
-  /* Hero Background Image */
-  background-image: url('E:/FRONT/new/furniture-store/src/hero-image.jpg');
-  /* Replace with the actual path to your image */
-  background-size: cover;
-  background-position: center;
+  /* Removed background-image property */
   height: 100vh;
   /* Full viewport height */
   display: flex;
+  /* Use flexbox for centering */
   align-items: center;
-  /* Vertically center content */
+  /* Center vertically */
   justify-content: center;
-  /* Horizontally center content */
+  /* Center horizontally */
   color: white;
+  /* Text color */
   text-align: center;
+  /* Center text */
   position: relative;
+  /* Positioning context for any child elements */
 }
+
 
 /* Dark overlay to make text readable */
 .hero::before {

@@ -620,7 +620,7 @@
             "id": 78,
             "name": "Living Luxe",
             "description": " a beautifully designed living room that combines elegance and comfort.",
-            "category": "Living Room",
+            "category": "LivingRoom",
             "price": 3000,
             "image": "/living main img/living1.jpg"
         },
@@ -628,7 +628,7 @@
             "id": 79,
             "name": "Cozy Corner",
             "description": "a beautifully designed living room that combines elegance and comfort",
-            "category": "Living Room",
+            "category": "LivingRoom",
             "price": 2000,
             "image": "/living main img/living2.jpg"
         },
@@ -636,7 +636,7 @@
             "id": 80,
             "name": "Urban Haven",
             "description": "a beautifully designed living room that combines elegance and comfort",
-            "category": "Living Room",
+            "category": "LivingRoom",
             "price": 1500,
             "image": "/living main img/living3.jpg"
         },
@@ -644,7 +644,7 @@
             "id": 81,
             "name": "Serenity",
             "description": "a beautifully designed living room that combines elegance and comfort",
-            "category": "Living Room",
+            "category": "LivingRoom",
             "price": 2500,
             "image": "/living main img/living4.jpg"
         },
@@ -652,7 +652,7 @@
             "id": 82,
             "name": "Design Den",
             "description": "a beautifully designed living room that combines elegance and comfort",
-            "category": "Living Room",
+            "category": "LivingRoom",
             "price": 3500,
             "image": "/living main img/living5.jpg"
         },
@@ -660,7 +660,7 @@
             "id": 83,
             "name": "Gather & Relax",
             "description": "a beautifully designed living room that combines elegance and comfort",
-            "category": "Living Room",
+            "category": "LivingRoom",
             "price": 4500,
             "image": "/living main img/living6.jpg"
         },
@@ -668,7 +668,7 @@
             "id": 84,
             "name": "Home Harmony",
             "description": "a beautifully designed living room that combines elegance and comfort",
-            "category": "Living Room",
+            "category": "LivingRoom",
             "price": 5500,
             "image": "/living main img/living7.jpg"
         },
@@ -676,7 +676,7 @@
             "id": 85,
             "name": "Lively Living",
             "description": "a beautifully designed living room that combines elegance and comfort",
-            "category": "Living Room",
+            "category": "LivingRoom",
             "price": 6000,
             "image": "/living main img/living8.jpg"
         },
@@ -684,7 +684,7 @@
             "id": 86,
             "name": "Tranquil Retreat",
             "description": "a beautifully designed living room that combines elegance and comfort",
-            "category": "Living Room",
+            "category": "LivingRoom",
             "price": 7500,
             "image": "/living main img/living9.jpg"
         },
@@ -692,7 +692,7 @@
             "id": 87,
             "name": "Serene Sitting",
             "description": "a beautifully designed living room that combines elegance and comfort",
-            "category": "Living Room",
+            "category": "LivingRoom",
             "price": 3000,
             "image": "/living main img/living10.jpg"
         }

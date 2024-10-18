@@ -17,23 +17,23 @@ function ProductCard({ product, onAddToCart, onAddToWishlist }) {
                 <h5 className='product-name'>{product.name}</h5>
                 <p className='product-description'>{product.description}</p>
                 <h6 className='product-price'>{product.price}</h6>
-                <div className='product-actions mt-3'>
+                <div className='product-actions d-flex justify-content-between mt-3'>
                     <Link
                         to={`/product/${product.id}`} // Link to the product details page
-                        className="btn btn-outline-secondary me-2"
+                        className="btn btn-outline-secondary me-2 flex-fill"
                         role="button"
                     >
                         <i className="bi bi-eye"></i> View Details
                     </Link>
                     <button
-                        className='btn btn-outline-warning me-2'
+                        className='btn btn-outline-warning me-2 flex-fill'
                         onClick={() => onAddToWishlist(product)}
                         aria-label={`Add ${product.name} to wishlist`}
                     >
                         <i className="bi bi-star"></i> Add to Wishlist
                     </button>
                     <button
-                        className='btn btn-primary'
+                        className='btn btn-primary flex-fill'
                         onClick={() => onAddToCart(product)}
                         aria-label={`Add ${product.name} to cart`}
                     >

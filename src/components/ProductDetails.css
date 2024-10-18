@@ -47,8 +47,10 @@
   color: #e0e0e0;
 }
 
+/* Consistent button styles */
 .add-to-cart-btn,
-.buy-now-btn {
+.buy-now-btn,
+.add-to-compare-btn {
   background-color: #c26e41;
   color: white;
   border: none;
@@ -57,11 +59,16 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
   margin-top: 10px;
+  /* Space above buttons */
+  width: 200px;
+  /* Fixed width for uniformity */
 }
 
 .add-to-cart-btn:hover,
-.buy-now-btn:hover {
+.buy-now-btn:hover,
+.add-to-compare-btn:hover {
   background-color: #a25033;
+  /* Darker shade on hover */
 }
 
 .product-description {
@@ -145,7 +152,9 @@
   }
 
   .add-to-cart-btn,
-  .buy-now-btn {
+  .buy-now-btn,
+  .add-to-compare-btn {
     width: 100%;
+    /* Full width on smaller screens */
   }
 }

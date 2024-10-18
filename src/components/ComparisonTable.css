@@ -14,6 +14,7 @@
 .comparison-table {
     width: 100%;
     border-collapse: collapse;
+    /* Collapses borders for better aesthetics */
 }
 
 .comparison-table th,
@@ -22,17 +23,18 @@
     /* Accent color for cells */
     color: white;
     border: none;
-    border-radius: 5px;
     padding: 10px 15px;
-    cursor: pointer;
     transition: background-color 0.3s ease;
+    text-align: left;
+    /* Align text to the left for clarity */
 }
 
-/* Dark header */
 .comparison-table th {
     background-color: #333;
+    /* Dark header */
 }
 
+/* Button to remove from comparison */
 .remove-from-compare-btn {
     background-color: #C26E41;
     /* Accent color */
@@ -56,75 +58,58 @@
         /* Reduce padding on smaller screens */
     }
 
-    .comparison-table th,
-    .comparison-table td {
-        padding: 8px 10px;
-        /* Smaller padding for table cells */
-        font-size: 0.9rem;
-        /* Slightly smaller font size */
-    }
-
-    /* Stack cells vertically on mobile */
     .comparison-table {
         display: block;
+        /* Allow for flex display */
         overflow-x: auto;
         /* Allow horizontal scrolling */
+        white-space: nowrap;
+        /* Prevent wrapping on smaller screens */
     }
 
-    .comparison-table thead,
-    .comparison-table tbody,
-    .comparison-table th,
-    .comparison-table td,
+    .comparison-table thead {
+        display: none;
+        /* Hide header on mobile */
+    }
+
     .comparison-table tr {
-        display: block;
-        /* Each row as block to stack vertically */
-    }
-
-    .comparison-table th {
-        position: absolute;
-        /* Fix header to the top */
-        left: -9999px;
-        /* Hide it */
+        display: flex;
+        /* Use flexbox for layout */
+        flex-direction: column;
+        /* Stack items vertically */
+        margin-bottom: 10px;
+        /* Space between rows */
+        border: 1px solid #ddd;
+        /* Light border for visibility */
+        border-radius: 5px;
+        /* Rounded corners */
     }
 
     .comparison-table td {
-        border: 1px solid #ddd;
-        /* Light border for visibility */
+        border: none;
+        /* Remove border */
         position: relative;
-        padding-left: 50%;
-        /* Add padding for labels */
+        /* For pseudo-elements */
+        padding: 10px;
+        /* Consistent padding */
         text-align: left;
         /* Align text to the left */
+        background-color: #333;
+        /* Background for each cell */
     }
 
     .comparison-table td:before {
+        content: attr(data-label);
+        /* Use data-label attribute for labels */
         position: absolute;
-        /* Label positioning */
+        /* Position label */
         left: 10px;
         /* Space from the left */
-        white-space: nowrap;
-        /* Prevent text from wrapping */
         font-weight: bold;
         /* Bold labels */
-    }
-
-    .comparison-table td:nth-of-type(1):before {
-        content: "Product";
-    }
-
-    .comparison-table td:nth-of-type(2):before {
-        content: "Price";
-    }
-
-    .comparison-table td:nth-of-type(3):before {
-        content: "Dimensions";
-    }
-
-    .comparison-table td:nth-of-type(4):before {
-        content: "Material";
-    }
-
-    .comparison-table td:nth-of-type(5):before {
-        content: "Color";
+        color: #c26e41;
+        /* Accent color for labels */
+        white-space: nowrap;
+        /* Prevent text wrapping */
     }
 }

@@ -7,6 +7,8 @@ body {
 
 .card {
     display: flex;
+    flex-direction: column;
+    /* Stack elements vertically */
     border: 1px solid #000000;
     /* Subtle border for cards */
     width: 300px;
@@ -44,7 +46,7 @@ body {
 
 .product-description {
     color: #C26E41;
-    /* Light gray for product description (ensure it's light enough) */
+    /* Light gray for product description */
     margin: 10px 0;
     /* Margin for spacing */
 }
@@ -63,11 +65,28 @@ body {
     /* Pointer cursor on hover */
 }
 
+/* Button Container */
+.product-actions {
+    display: flex;
+    /* Use flexbox for button layout */
+    flex-wrap: wrap;
+    /* Allow buttons to wrap if needed */
+    justify-content: space-between;
+    /* Space between buttons */
+    margin-top: 10px;
+    /* Space above buttons */
+}
+
+/* Button Styles */
 .btn {
     border-radius: 5px;
     /* Rounded corners for buttons */
     padding: 10px 15px;
     /* Better touch target size for buttons */
+    flex: 1;
+    /* Allow buttons to grow */
+    margin: 5px;
+    /* Space between buttons */
 }
 
 .btn-outline-warning,
@@ -110,5 +129,12 @@ body {
         /* Full width on small screens */
         margin: 10px 0;
         /* Add margin */
+    }
+
+    .btn {
+        flex: 1;
+        /* Allow buttons to grow */
+        margin: 5px 0;
+        /* Vertical spacing on smaller screens */
     }
 }

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { Carousel } from 'react-responsive-carousel';
 import productsData from '../data/products.json'; // Your products JSON file
 import ComparisonTable from './ComparisonTable'; // Import the ComparisonTable
@@ -41,7 +41,10 @@ const ProductDetails = ({ onAddToCart, onAddToWishlist, onAddToCompare, comparis
 
         {/* Action Buttons */}
         <button className="add-to-cart-btn" onClick={() => onAddToCart(product)}>Add To Cart</button>
-        <button className="buy-now-btn">Buy Now</button>
+
+        {/* Link the Buy Now button to the payment page */}
+        <Link to="/payment" className="buy-now-btn">Buy Now</Link>
+
         <button className="add-to-compare-btn" onClick={() => onAddToCompare(product)}>
           Add To Compare
         </button>

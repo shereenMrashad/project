@@ -10,7 +10,7 @@ import CartPage from './components/CartPage';
 import WishlistPage from './components/WishlistPage';
 import ProductList from './components/ProductList';
 import ProductDetails from './components/ProductDetails';
-import ComparisonTable from './components/ComparisonTable'; // Import ComparisonTable
+import PaymentPage from './components/PaymentPage'; // Ensure you have this component
 import Footer from './components/Footer';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -22,74 +22,76 @@ function App() {
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [cart, setCart] = useState([]);
   const [wishlist, setWishlist] = useState([]);
-  const [comparisonList, setComparisonList] = useState([]); // State for comparison
+  const [comparisonList, setComparisonList] = useState([]);
 
-  useEffect(() => {
-    const storedCart = localStorage.getItem('cart');
-    const storedWishlist = localStorage.getItem('wishlist');
+  // Custom hooks for local storage management
+  const useLocalStorage = (key, initialValue) => {
+    const storedValue = localStorage.getItem(key);
+    const [value, setValue] = useState(storedValue ? JSON.parse(storedValue) : initialValue);
 
-    if (storedCart) {
-      setCart(JSON.parse(storedCart));
-    }
+    useEffect(() => {
+      localStorage.setItem(key, JSON.stringify(value));
+    }, [key, value]);
 
-    if (storedWishlist) {
-      setWishlist(JSON.parse(storedWishlist));
-    }
-  }, []);
-
-  useEffect(() => {
-    localStorage.setItem('cart', JSON.stringify(cart));
-  }, [cart]);
-
-  useEffect(() => {
-    localStorage.setItem('wishlist', JSON.stringify(wishlist));
-  }, [wishlist]);
-
-  const handleCategorySelect = (category) => {
-    setSelectedCategory(category);
+    return [value, setValue];
   };
 
+  // Use custom hook to manage state and local storage
+  const [cartItems, setCartItems] = useLocalStorage('cart', []);
+  const [wishlistItems, setWishlistItems] = useLocalStorage('wishlist', []);
+
+  // Functionality for adding items to cart
   const handleAddToCart = (product) => {
-    setCart((prevCart) => [...prevCart, product]);
+    setCartItems((prev) => [...prev, product]);
     toast.success(`${product.name} added to cart!`);
   };
 
+  // Functionality for adding items to wishlist
   const handleAddToWishlist = (product) => {
-    setWishlist((prevWishlist) => [...prevWishlist, product]);
+    setWishlistItems((prev) => [...prev, product]);
     toast.success(`${product.name} added to wishlist!`);
   };
 
+  // Functionality for adding items to comparison
   const handleAddToComparison = (product) => {
     if (!comparisonList.some(item => item.id === product.id)) {
-      setComparisonList(prev => [...prev, product]);
+      setComparisonList((prev) => [...prev, product]);
       toast.success(`${product.name} added to comparison!`);
     } else {
       toast.warn(`${product.name} is already in the comparison list!`);
     }
   };
 
+  // Remove item from cart
   const handleRemoveFromCart = (productId) => {
-    setCart((prevCart) => prevCart.filter((item) => item.id !== productId));
+    setCartItems((prev) => prev.filter(item => item.id !== productId));
   };
 
+  // Remove item from wishlist
   const handleRemoveFromWishlist = (productId) => {
-    setWishlist((prevWishlist) => prevWishlist.filter((item) => item.id !== productId));
+    setWishlistItems((prev) => prev.filter(item => item.id !== productId));
   };
 
+  // Remove item from comparison
   const handleRemoveFromComparison = (productId) => {
-    setComparisonList((prevList) => prevList.filter((item) => item.id !== productId));
+    setComparisonList((prev) => prev.filter(item => item.id !== productId));
   };
 
   return (
     <div className="App dark">
       <Router>
-        <CustomNavbar cartCount={cart.length} wishlistCount={wishlist.length} comparisonCount={comparisonList.length} />
+        <CustomNavbar
+          cartCount={cartItems.length}
+          wishlistCount={wishlistItems.length}
+          comparisonCount={comparisonList.length}
+        />
 
         <Routes>
+          <Route path="/payment" element={<PaymentPage />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/search" element={<SearchPage products={productsData.products} />} />
-          <Route path="/cart" element={<CartPage cartItems={cart} removeFromCart={handleRemoveFromCart} />} />
-          <Route path="/wishlist" element={<WishlistPage wishlistItems={wishlist} removeFromWishlist={handleRemoveFromWishlist} addToCart={handleAddToCart} />} />
+          <Route path="/cart" element={<CartPage cartItems={cartItems} removeFromCart={handleRemoveFromCart} />} />
+          <Route path="/wishlist" element={<WishlistPage wishlistItems={wishlistItems} removeFromWishlist={handleRemoveFromWishlist} addToCart={handleAddToCart} />} />
           <Route path="/products" element={<ProductList selectedCategory={selectedCategory} onAddToCart={handleAddToCart} onAddToWishlist={handleAddToWishlist} onAddToComparison={handleAddToComparison} />} />
           <Route path="/product/:productId" element={
             <ProductDetails
@@ -103,7 +105,7 @@ function App() {
           <Route path="/" element={
             <>
               <Hero />
-              <Categories onCategorySelect={handleCategorySelect} />
+              <Categories onCategorySelect={setSelectedCategory} />
               <FeaturedProducts selectedCategory={selectedCategory} onAddToCart={handleAddToCart} onAddToWishlist={handleAddToWishlist} onAddToComparison={handleAddToComparison} />
             </>
           } />

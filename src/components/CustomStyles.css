@@ -34,6 +34,7 @@
     /* Apply the animation to move the text */
 }
 
+
 /* Make the moving text responsive */
 @media (max-width: 768px) {
     .moving-text {
@@ -56,10 +57,8 @@
 
 .navbar-logo img {
     background-color: #343a40;
-    /* Consistent background for logo */
     padding: 2px;
     border-radius: 50%;
-    cursor: default;
 }
 
 /* Styling for the links */
@@ -113,6 +112,59 @@
 .navbar-toggler:hover {
     background-color: #D2691E;
     /* Change background color to the desired hover color */
+}
+
+.search-page {
+    background-color: #121212;
+    /* Dark background for the search page */
+    color: #e0e0e0;
+    /* Light text color */
+    min-height: 100vh;
+    /* Full height of the viewport */
+    padding: 40px;
+    /* Optional padding */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #C26E41;
+    /* Your accent color */
+}
+
+input.form-control {
+    border-radius: 25px;
+    padding: 10px 20px;
+    border: 1px solid #C26E41;
+}
+
+input.form-control:focus {
+    border-color: #C26E41;
+    box-shadow: 0 0 5px rgba(194, 110, 65, 0.5);
+}
+
+.list-group-item {
+    background-color: #343a40;
+    /* Darker item background */
+    color: white;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.list-group-item h5 {
+    color: #C26E41;
+    /* Accent color for product names */
+}
+
+.list-group-item p {
+    font-size: 0.9rem;
+}
+
+.list-group-item span {
+    font-weight: bold;
+    color: #FF6347;
+    /* Price color */
 }
 
 /* Container for the signup form */

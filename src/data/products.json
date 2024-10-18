@@ -515,7 +515,7 @@
             "name": "Wall Clock",
             "category": "Clocks",
             "description": "Sleek wall clock with a glass frame for a modern touch.",
-            "price": 600,
+            "price": "$600",
             "specifications": {
                 "dimensions": "40 cm diameter",
                 "material": "Metal, Glass",
@@ -815,7 +815,7 @@
             "name": "Grey Chair",
             "category": "Chairs",
             "description": "A stylish Grey Chair with a modern design.",
-            "price": 100,
+            "price": "$100",
             "specifications": {
                 "dimensions": "50 x 50 x 90 cm",
                 "material": "Fabric, Wood",
@@ -830,7 +830,7 @@
             "name": "bubble chair",
             "category": "Chairs",
             "description": "A Crazy Chair From Space.",
-            "price": 500,
+            "price": "$500",
             "specifications": {
                 "dimensions": "50 x 50 x 90 cm",
                 "material": "Fabric, Wood",
@@ -845,7 +845,7 @@
             "name": "Striped Chair",
             "category": "Chairs",
             "description": "A Vintage Chair for Classic Lovers .",
-            "price": 1500,
+            "price": "$1500",
             "specifications": {
                 "dimensions": "60 x 60 x 110 cm",
                 "material": "Plastic, Aluminum",
@@ -860,7 +860,7 @@
             "name": "Green Chair",
             "category": "Chairs",
             "description": "Green chair that will fit Perfectly with Boho Style.",
-            "price": 600,
+            "price": "$600",
             "specifications": {
                 "dimensions": "45 x 55 x 85 cm",
                 "material": "Fabric, Wood",
@@ -875,7 +875,7 @@
             "name": "Blue Chair",
             "category": "Chairs",
             "description": "Classic old fashonied Chair.",
-            "price": 800,
+            "price": "$800",
             "specifications": {
                 "dimensions": "45 x 55 x 85 cm",
                 "material": "Plastic, Aluminum",
@@ -890,7 +890,7 @@
             "name": " Wooden Chair",
             "category": "Chairs",
             "description": " wooden Chair for Fun Lovers .",
-            "price": 250,
+            "price": "$250",
             "specifications": {
                 "dimensions": "60 x 60 x 110 cm",
                 "material": "Leather, Foam, Metal",
@@ -905,7 +905,7 @@
             "name": "Brown Chair",
             "category": "Chairs",
             "description": "Over size Chair for relaxing ZZzz.",
-            "price": 110,
+            "price": "$110",
             "specifications": {
                 "dimensions": "60 x 60 x 110 cm",
                 "material": "Fabric, Wood",
@@ -920,7 +920,7 @@
             "name": "office chair ",
             "category": "Chairs",
             "description": "it Will Help you to study and finish your work.",
-            "price": 820,
+            "price": "$820",
             "specifications": {
                 "dimensions": "60 x 60 x 110 cm",
                 "material": "Plastic, Aluminum",
@@ -935,7 +935,7 @@
             "name": "Navy Chair ",
             "category": "Chairs",
             "description": "this Chair Acts as a lazy boy .",
-            "price": 900,
+            "price": "$900",
             "specifications": {
                 "dimensions": "45 x 55 x 85 cm",
                 "material": "Plastic, Aluminum",
@@ -950,7 +950,7 @@
             "name": "Amanda Bed room",
             "description": " featuring a luxurious bed, spacious closet, two night stands, and a dresser - all made from high-quality lumber boards.",
             "category": "Bedroom",
-            "price": 3500,
+            "price": "$3500",
             "specifications": {
                 "dimensions": "300 x 200 x 100 cm",
                 "material": "Wood, Upholstery",
@@ -965,7 +965,7 @@
             "name": "Lotus Bed room",
             "description": "a cozy and functional addition to any bedroom. With its comfortable design, it provides a cozy atmosphere for a good night's sleep.",
             "category": "Bedroom",
-            "price": 2500,
+            "price": "$2500",
             "specifications": {
                 "dimensions": "320 x 220 x 110 cm",
                 "material": "Leather, Fabric",
@@ -980,7 +980,7 @@
             "name": "Rayan Bed room",
             "description": "provides both function and style. The sturdy frame ensures durability while the comfortable upholstered.Enhance your sleeping experience with this expertly designed bedroom set.",
             "category": "Bedroom",
-            "price": 4500,
+            "price": "$4500",
             "specifications": {
                 "dimensions": "320 x 220 x 110 cm",
                 "material": "Wood, Upholstery",
@@ -995,7 +995,7 @@
             "name": "Tofo Bed room",
             "description": " featuring a luxurious bed, spacious closet, two night stands, and a dresser - all made from high-quality lumber boards.",
             "category": "Bedroom",
-            "price": 4000,
+            "price": "$4000",
             "specifications": {
                 "dimensions": "320 x 220 x 110 cm",
                 "material": "Pine Wood, MDF",
@@ -1010,7 +1010,7 @@
             "name": "Sole Bed room",
             "description": "The sturdy frame ensures durability while the comfortable upholstered head board adds a touch of luxury to your bedroom",
             "category": "Bedroom",
-            "price": 3500,
+            "price": "$3500",
             "specifications": {
                 "dimensions": "300 x 200 x 100 cm",
                 "material": "Wood, Upholstery",
@@ -1025,7 +1025,7 @@
             "name": "Riva Bed room",
             "description": "a stylish and cozy upholstered bed that includes a closet, two commodes, and a dresser.",
             "category": "Bedroom",
-            "price": 2500,
+            "price": "$2500",
             "specifications": {
                 "dimensions": "320 x 220 x 110 cm",
                 "material": "Wood, Upholstery",
@@ -1040,7 +1040,7 @@
             "name": "Z Bed",
             "description": "offers a comfortable, minimalist design that promotes relaxation and functionality.",
             "category": "Bedroom",
-            "price": 500,
+            "price": "$500",
             "specifications": {
                 "dimensions": "300 x 200 x 100 cm",
                 "material": "Leather, Fabric",
@@ -1055,7 +1055,7 @@
             "name": "viora Bed",
             "description": "offers a comfortable and luxurious sleeping experience, thanks to its high-quality design. With a focus on comfort and durability.",
             "category": "Bedroom",
-            "price": 1000,
+            "price": "$1000",
             "specifications": {
                 "dimensions": "300 x 200 x 100 cm",
                 "material": "Wood, Upholstery",
@@ -1070,7 +1070,7 @@
             "name": "Luna Bed",
             "description": "This high quality bed, designed by experts, promises a peaceful sleep every night.",
             "category": "Bedroom",
-            "price": 1500,
+            "price": "$1500",
             "specifications": {
                 "dimensions": "280 x 210 x 90 cm",
                 "material": "Wood, Upholstery",
@@ -1085,7 +1085,7 @@
             "name": "Deniz Bed",
             "description": "This high quality bed, designed by experts, promises a peaceful sleep every night.",
             "category": "Bedroom",
-            "price": 2000,
+            "price": "$2000",
             "specifications": {
                 "dimensions": "320 x 220 x 110 cm",
                 "material": "Leather, Fabric",
@@ -1099,8 +1099,8 @@
             "id": 78,
             "name": "Living Luxe",
             "description": " a beautifully designed living room that combines elegance and comfort.",
-            "category": "Living Room",
-            "price": 3000,
+            "category": "LivingRoom",
+            "price": "$3000",
             "specifications": {
                 "dimensions": "350 x 300 cm",
                 "material": "Leather, Glass",
@@ -1114,8 +1114,8 @@
             "id": 79,
             "name": "Cozy Corner",
             "description": "a beautifully designed living room that combines elegance and comfort",
-            "category": "Living Room",
-            "price": 2000,
+            "category": "LivingRoom",
+            "price": "$2000",
             "specifications": {
                 "dimensions": "400 x 350 cm",
                 "material": "Wood, Fabric",
@@ -1129,8 +1129,8 @@
             "id": 80,
             "name": "Urban Haven",
             "description": "a beautifully designed living room that combines elegance and comfort",
-            "category": "Living Room",
-            "price": 1500,
+            "category": "LivingRoom",
+            "price": "$1500",
             "specifications": {
                 "dimensions": "350 x 300 cm",
                 "material": "Wood, Fabric",
@@ -1144,8 +1144,8 @@
             "id": 81,
             "name": "Serenity",
             "description": "a beautifully designed living room that combines elegance and comfort",
-            "category": "Living Room",
-            "price": 2500,
+            "category": "LivingRoom",
+            "price": "$2500",
             "specifications": {
                 "dimensions": "350 x 300 cm",
                 "material": "Wood, Metal",
@@ -1159,8 +1159,8 @@
             "id": 82,
             "name": "Design Den",
             "description": "a beautifully designed living room that combines elegance and comfort",
-            "category": "Living Room",
-            "price": 3500,
+            "category": "LivingRoom",
+            "price": "$3500",
             "specifications": {
                 "dimensions": "380 x 320 cm",
                 "material": "Wood, Metal",
@@ -1174,8 +1174,8 @@
             "id": 83,
             "name": "Gather & Relax",
             "description": "a beautifully designed living room that combines elegance and comfort",
-            "category": "Living Room",
-            "price": 4500,
+            "category": "LivingRoom",
+            "price": "$4500",
             "specifications": {
                 "dimensions": "380 x 320 cm",
                 "material": "Wood, Metal",
@@ -1189,8 +1189,8 @@
             "id": 84,
             "name": "Home Harmony",
             "description": "a beautifully designed living room that combines elegance and comfort",
-            "category": "Living Room",
-            "price": 5500,
+            "category": "LivingRoom",
+            "price": "$5500",
             "specifications": {
                 "dimensions": "380 x 320 cm",
                 "material": "Wood, Fabric",
@@ -1204,8 +1204,8 @@
             "id": 85,
             "name": "Lively Living",
             "description": "a beautifully designed living room that combines elegance and comfort",
-            "category": "Living Room",
-            "price": 6000,
+            "category": "LivingRoom",
+            "price": "$6000",
             "specifications": {
                 "dimensions": "380 x 320 cm",
                 "material": "Wood, Metal",
@@ -1219,8 +1219,8 @@
             "id": 86,
             "name": "Tranquil Retreat",
             "description": "a beautifully designed living room that combines elegance and comfort",
-            "category": "Living Room",
-            "price": 7500,
+            "category": "LivingRoom",
+            "price": "$7500",
             "specifications": {
                 "dimensions": "380 x 320 cm",
                 "material": "Wood, Fabric",
@@ -1234,8 +1234,8 @@
             "id": 87,
             "name": "Serene Sitting",
             "description": "a beautifully designed living room that combines elegance and comfort",
-            "category": "Living Room",
-            "price": 3000,
+            "category": "LivingRoom",
+            "price": "$3000",
             "specifications": {
                 "dimensions": "350 x 300 cm",
                 "material": "Leather, Glass",

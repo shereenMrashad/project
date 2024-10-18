@@ -116,6 +116,11 @@ body {
     /* Darker red on hover */
 }
 
+.h5,
+h6 {
+    color: #f0f0f0;
+}
+
 /* Accordion Styles */
 .accordion,
 .accordion-body {
@@ -163,4 +168,29 @@ body {
         padding: 6px 10px;
         /* Smaller button padding for mobile */
     }
+}
+
+.product-card h5 {
+    font-size: 1.2rem;
+    /* Larger font size for product name */
+    color: #c26e41;
+    /* Accent color */
+    font-weight: bold;
+    /* Bold font for emphasis */
+    margin-bottom: 10px;
+    /* Space below product name */
+}
+
+.product-card h6 {
+    font-size: 1rem;
+    /* Slightly smaller font for category and price */
+    color: #e0e0e0;
+    /* Light text color */
+    margin-bottom: 5px;
+    /* Space below text */
+}
+
+.text-muted {
+    color: #ecdcdc;
+    /* Muted gray color for subtle text */
 }

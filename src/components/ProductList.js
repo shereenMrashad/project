@@ -73,7 +73,7 @@ function ProductList({ onAddToCart, onAddToWishlist }) {
                                 <h5 onClick={() => setCategory('Clocks')}>Clocks</h5>
                                 <h5 onClick={() => setCategory('Pillows')}>Pillows</h5>
                                 <h5 onClick={() => setCategory('Bedroom')}>Bedroom</h5>
-                                <h5 onClick={() => setCategory('Living Room')}>Living Room</h5>
+                                <h5 onClick={() => setCategory('LivingRoom')}>Living Room</h5>
                             </AccordionItem>
 
                             {/* Price Filter */}

@@ -11,8 +11,7 @@ function ProductCard({ product, onAddToCart, onAddToWishlist }) {
                 src={product.image}
                 alt={`Image of ${product.name}`}
                 className='card-img'
-                onError={(e) => { e.target.src = '/path/to/default-image.png'; }} // Fallback image
-                loading="lazy" // Optimize loading by lazy loading the image
+                onError={(e) => { e.target.src = '/path/to/default-image.png'; }}
             />
             <Card.Body className='text-center'>
                 <h5 className='product-name'>{product.name}</h5>

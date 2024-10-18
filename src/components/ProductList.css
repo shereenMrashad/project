@@ -116,6 +116,7 @@ button.apply-filter-btn {
 
 button.apply-filter-btn:hover {
     background-color: #a25033;
+    /* Darker shade on hover */
     transform: translateY(-2px);
     /* Slight lift effect */
 }
@@ -129,6 +130,30 @@ button.apply-filter-btn:hover {
 
 .accordion h5:hover {
     background-color: #444;
+    /* Change background on hover */
     color: #C26E41;
     /* Change category color on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .filter-section {
+        padding: 15px;
+        /* Adjust padding for smaller screens */
+    }
+
+    input.form-control {
+        padding: 8px;
+        /* Smaller padding for input fields */
+    }
+
+    button {
+        padding: 8px 16px;
+        /* Smaller padding for buttons */
+    }
+
+    .accordion-button {
+        font-size: 16px;
+        /* Larger font size for better readability */
+    }
 }

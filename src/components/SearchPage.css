@@ -1,0 +1,44 @@
+/* Set the background color for the entire page */
+html, body {
+    background-color: black; /* Set background color to black */
+    margin: 0; /* Remove default margin */
+    height: 100%; /* Ensure the body takes the full height */
+    color: white; /* Set default text color to white */
+}
+
+/* Styles for the search page */
+.search-page {
+    background-color: black; /* Background color */
+    color: white; /* Text color */
+    min-height: 100vh; /* Full height */
+    padding: 40px; /* Add padding to the container */
+}
+
+/* Styles for text elements */
+.text-white {
+    color: white; /* Set text color to white */
+    font-weight: bold; /* Make the text bold */
+}
+
+h2 {
+    text-align: center; /* Center the heading */
+    margin-bottom: 20px; /* Add space below the heading */
+    color: #D2691E; /* Change color of the heading to a specific shade */
+}
+
+/* Styles for input fields */
+input.form-control {
+    border-radius: 25px; /* Rounded corners for the input */
+    padding: 10px 20px; /* Padding inside the input */
+    border: 1px solid #D2691E; /* Border color for the input */
+    background-color: white; /* Set background color for inputs to white */
+    color: black; /* Set text color inside inputs to black */
+}
+
+/* Change border color and add shadow effect on focus */
+input.form-control:focus {
+    border-color: #D2691E; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(210, 105, 30, 0.5); /* Add shadow effect on focus */
+    outline: none; /* Remove default outline */
+}
+

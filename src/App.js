@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Hero from './components/Hero';
@@ -9,13 +9,38 @@ import SearchPage from './components/SearchPage';
 import CartPage from './components/CartPage';
 import WishlistPage from './components/WishlistPage';
 import ProductList from './components/ProductList';
+import Footer from './components/Footer'; // Import Footer component
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './components/CustomStyles.css';
 import productsData from './data/products.json';
+import Signup from './components/Signup';
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [cart, setCart] = useState([]);
   const [wishlist, setWishlist] = useState([]);
+
+  useEffect(() => {
+    const storedCart = localStorage.getItem('cart');
+    const storedWishlist = localStorage.getItem('wishlist');
+
+    if (storedCart) {
+      setCart(JSON.parse(storedCart));
+    }
+
+    if (storedWishlist) {
+      setWishlist(JSON.parse(storedWishlist));
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem('cart', JSON.stringify(cart));
+  }, [cart]);
+
+  useEffect(() => {
+    localStorage.setItem('wishlist', JSON.stringify(wishlist));
+  }, [wishlist]);
 
   const handleCategorySelect = (category) => {
     setSelectedCategory(category);
@@ -23,12 +48,12 @@ function App() {
 
   const handleAddToCart = (product) => {
     setCart((prevCart) => [...prevCart, product]);
-    console.log('Product added to cart:', product);
+    toast.success(`${product.name} added to cart!`);
   };
 
   const handleAddToWishlist = (product) => {
     setWishlist((prevWishlist) => [...prevWishlist, product]);
-    console.log('Product added to wishlist:', product);
+    toast.success(`${product.name} added to wishlist!`);
   };
 
   const handleRemoveFromCart = (productId) => {
@@ -46,6 +71,7 @@ function App() {
 
         {/* Define routes here */}
         <Routes>
+          <Route path="/signup" element={<Signup />} /> {/* Add Signup Route */}
           <Route path="/search" element={<SearchPage products={productsData.products} />} />
           <Route path="/cart" element={<CartPage cartItems={cart} removeFromCart={handleRemoveFromCart} />} />
           <Route
@@ -71,6 +97,10 @@ function App() {
             </>
           } />
         </Routes>
+
+        {/* Footer Component */}
+        <Footer />
+        <ToastContainer /> {/* Toast container for notifications */}
       </Router>
     </div>
   );

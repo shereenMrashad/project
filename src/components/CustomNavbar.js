@@ -7,14 +7,14 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import logo from './Assets/logo.png';
+import logo from './Assets/logooo.png';
 import './CustomStyles.css';
 
 function CustomNavbar({ cartCount, wishlistCount }) {
     return (
         <Navbar expand="lg" className="bg-dark">
             <Container>
-                <Navbar.Brand as={Link} to="/" className="navbar-logo">
+                <Navbar.Brand to="/" className="navbar-logo">
                     <img
                         src={logo}
                         width="30"
@@ -29,14 +29,18 @@ function CustomNavbar({ cartCount, wishlistCount }) {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link as={Link} to="/">Home</Nav.Link>
+
                         <Nav.Link as={Link} to="/products">Product List</Nav.Link> {/* Added link to Product List */}
 
-
+                        <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
                     </Nav>
                     <Nav>
                         <Nav.Link as={Link} to="/search"><i className="bi bi-search"></i></Nav.Link>
                         <Nav.Link as={Link} to="/wishlist"><i className="bi bi-heart"></i> {wishlistCount}</Nav.Link>
                         <Nav.Link as={Link} to="/cart"><i className="bi bi-cart"></i> {cartCount}</Nav.Link>
+                        <Nav.Link as={Link} to="/signup">
+                            <i className="bi bi-person"></i>
+                        </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

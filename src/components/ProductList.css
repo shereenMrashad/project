@@ -1,127 +1,134 @@
-/* WishlistPage.css */
-/* Set the background color for the entire page */
-html,
-body {
-    background-color: black;
-    /* Set background color to black */
-    margin: 0;
-    /* Remove default margin */
-    height: 100%;
-    /* Ensure the body takes the full height */
-    color: white;
-    /* Set default text color to white */
-}
-
-.product-list {
-    background-color: #000000;
-    /* Ensure product list area is dark */
-    color: #f0f0f0;
-    /* Light text for readability */
-    min-height: 100vh;
-    /* Full height to cover screen */
-    padding: 20px;
-    /* Add some padding for spacing */
-}
-
-.accordion,
-.accordion-body {
-    background-color: #000000;
-    /* Dark background for accordion */
-    color: #f0f0f0;
-    /* Light text for readability */
-}
-
-input[type="number"] {
-    background-color: #050505;
-    color: white;
-    border: none;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-input[type="number"]:focus {
-    outline: none;
-    border: 1px solid #C26E41;
-    /* Focus state */
-}
-
-h2,
-h3 {
-    color: white;
-    background-color: #050505;
-    /* Ensure headings are white */
-}
-
-/* Filter section styling */
+/* Style for the entire filter section */
 .filter-section {
-    background-color: #050505;
-    /* Dark background for the filter */
-    padding: 20px;
-    /* Add spacing */
-    border-radius: 10px;
-    /* Rounded corners for a professional look */
-    border: 1px solid #000000;
-    /* Subtle border for contrast */
+    background-color: #2c2c2c;
+    /* Dark background */
     color: #f0f0f0;
-    /* Text color */
-    margin-bottom: 20px;
-    /* Space between the filter and product list */
+    /* Light text color */
+    padding: 20px;
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    margin-bottom: 30px;
 }
 
-.filter-section h5 {
-    font-size: 18px;
-    color: #040404;
-    /* Ensure the category text is white */
+/* Accordion styling for a more professional look */
+.accordion-item {
+    background-color: #333;
+    /* Darker background for accordion items */
+    color: #f0f0f0;
+    /* Light text */
+    border: 1px solid #444;
+    /* Border for distinction */
+    border-radius: 8px;
+    margin-bottom: 10px;
+    /* Add spacing between items */
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #444;
+    /* Dark background when expanded */
+    color: #f0f0f0;
+}
+
+.accordion-button {
+    background-color: #333;
+    /* Dark background for collapsed state */
+    color: #f0f0f0;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-button:hover {
+    background-color: #555;
+    /* Slightly lighter background on hover */
+}
+
+/* Input fields styling for price filter */
+input.form-control {
+    background-color: #3a3a3a;
+    /* Darker input field */
+    color: #f0f0f0;
+    /* Light text */
+    border: 1px solid #555;
+    /* Subtle border */
+    padding: 10px;
     margin-bottom: 15px;
-    /* Add spacing between filter titles */
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+input.form-control:focus {
+    border-color: #C26E41;
+    /* Highlight border on focus */
+}
+
+input.form-control::placeholder {
+    color: #999;
+    /* Lighter placeholder text */
+}
+
+/* Buttons styling */
+button {
+    background-color: #C26E41;
+    /* Dark theme primary button */
+    color: #f0f0f0;
+    /* Light button text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #a25033;
+    /* Darker on hover */
+    transform: translateY(-2px);
+    /* Slight lift effect */
+}
+
+/* Category items hover effect */
+.filter-section h5 {
+    cursor: pointer;
+    transition: color 0.3s ease;
+    padding: 8px 0;
+    font-size: 16px;
 }
 
 .filter-section h5:hover {
     color: #C26E41;
-    /* Highlight hover effect */
-    cursor: pointer;
-    /* Add a pointer to show it is clickable */
+    /* Highlight on hover */
 }
 
-.filter-section input {
-    background-color: #403b3b;
-    /* Dark background for input fields */
-    color: white;
-    border: 1px solid #555;
-    /* Subtle border */
-    padding: 10px;
-    width: 100%;
-    margin-bottom: 15px;
-    /* Add space between fields */
-    border-radius: 5px;
-    /* Round corners for inputs */
-    transition: border-color 0.3s ease;
-}
-
-.filter-section input:focus {
-    outline: none;
-    border-color: #C26E41;
-    /* Border color when focused */
-}
-
-.filter-section .price-range {
-    display: flex;
-    gap: 10px;
-    /* Space between Min and Max price inputs */
-}
-
-.filter-section button {
+/* Apply button styling */
+button.apply-filter-btn {
     background-color: #C26E41;
-    /* Button background matching theme */
-    color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    color: #f0f0f0;
+    font-size: 14px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.filter-section button:hover {
+button.apply-filter-btn:hover {
     background-color: #a25033;
-    /* Darker hover effect */
+    transform: translateY(-2px);
+    /* Slight lift effect */
+}
+
+/* Add subtle hover effects to the categories */
+.accordion h5 {
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.accordion h5:hover {
+    background-color: #444;
+    color: #C26E41;
+    /* Change category color on hover */
 }

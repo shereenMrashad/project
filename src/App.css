@@ -22,7 +22,7 @@ body.dark {
 /* Hero Section */
 
 .hero {
-    background-image: url('E:/FRONT/new/furniture-store/src/hero-image.jpg');
+
     /* Dark-themed hero image */
     background-size: cover;
     background-position: center;
@@ -68,6 +68,7 @@ body.dark {
     height: 200px;
     object-fit: cover;
     border-radius: 10px;
+
 }
 
 .category-item a {
@@ -100,6 +101,8 @@ body.dark {
     /* Light text color */
     border: 2px solid #C26E41;
     /* Accent border */
+    display: flex;
+    justify-content: center;
 }
 
 .product-item:hover {

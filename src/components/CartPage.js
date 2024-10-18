@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Card from 'react-bootstrap/Card';
 import './CartPage.css';
+import PaymentPage from './PaymentPage'; // Import the PaymentPage component
 
 function CartPage({ cartItems, removeFromCart }) {
+    const [isPaymentVisible, setPaymentVisible] = useState(false); // State to control visibility of PaymentPage
+
     // Function to calculate the total price
     const getTotalPrice = () => {
         return cartItems.reduce((total, item) => total + parseFloat(item.price.replace('$', '')), 0).toFixed(2);
+    };
+
+    const handleProceedToPayment = () => {
+        setPaymentVisible(true); // Show the payment section
     };
 
     return (
@@ -31,7 +38,17 @@ function CartPage({ cartItems, removeFromCart }) {
             )}
             {cartItems.length > 0 && (
                 <div className="total-price">
-                    Total Price: ${getTotalPrice()}
+                    <h4>Total Price: ${getTotalPrice()}</h4>
+                    <button className="btn btn-primary" onClick={handleProceedToPayment}>
+                        Proceed to Payment
+                    </button>
+                </div>
+            )}
+
+            {/* Show Payment Page if the user proceeds to payment */}
+            {isPaymentVisible && (
+                <div className="payment-section">
+                    <PaymentPage />
                 </div>
             )}
         </div>

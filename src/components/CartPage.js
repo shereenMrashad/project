@@ -1,23 +1,21 @@
 import React, { useState } from 'react';
 import Card from 'react-bootstrap/Card';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
+import { useNavigate } from 'react-router-dom';
 import './CartPage.css';
-import PaymentPage from './PaymentPage'; // Import the PaymentPage component
+import PaymentPage from './PaymentPage';
 
 function CartPage({ cartItems, setCartItems, removeFromCart }) {
-    const [isPaymentVisible, setPaymentVisible] = useState(false); // State to control visibility of PaymentPage
-    const navigate = useNavigate(); // Initialize useNavigate
+    const [isPaymentVisible, setPaymentVisible] = useState(false);
+    const navigate = useNavigate();
 
-    // Function to calculate the total price
     const getTotalPrice = () => {
         return cartItems.reduce((total, item) => {
-            const price = parseFloat(item.price.replace('$', '').replace(',', '')); // Remove $ and commas
-            const quantity = item.quantity || 0; // Fallback to 0 if quantity is undefined
+            const price = typeof item.price === 'string' ? parseFloat(item.price.replace('$', '').replace(',', '')) : item.price;
+            const quantity = item.quantity || 0;
 
-            // Check for valid price
             if (isNaN(price) || isNaN(quantity)) {
                 console.error(`Invalid price or quantity for item: ${item.name}`);
-                return total; // Skip invalid items
+                return total;
             }
 
             return total + (price * quantity);
@@ -25,8 +23,8 @@ function CartPage({ cartItems, setCartItems, removeFromCart }) {
     };
 
     const handleProceedToPayment = () => {
-        setPaymentVisible(true); // Show the payment section
-        window.scrollTo(0, 0); // Scroll to top when proceeding to payment
+        setPaymentVisible(true);
+        window.scrollTo(0, 0);
     };
 
     const incrementQuantity = (itemId) => {
@@ -90,7 +88,6 @@ function CartPage({ cartItems, setCartItems, removeFromCart }) {
                 </div>
             )}
 
-            {/* Show Payment Page if the user proceeds to payment */}
             {isPaymentVisible && (
                 <div className="payment-section">
                     <PaymentPage />

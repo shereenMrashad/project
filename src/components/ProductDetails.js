@@ -9,24 +9,33 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 const ProductDetails = ({ onAddToCart, onAddToWishlist, onAddToCompare, comparisonList, onRemoveFromCompare }) => {
   const { productId } = useParams(); // Get product ID from the URL
   const [product, setProduct] = useState(null);
+  const [loading, setLoading] = useState(true); // Loading state
+  const [error, setError] = useState(null); // Error state
 
   useEffect(() => {
-    // Find the product by its ID
     const foundProduct = productsData.products.find(p => p.id === parseInt(productId));
-    setProduct(foundProduct);
+    if (foundProduct) {
+      setProduct(foundProduct);
+    } else {
+      setError('Product not found');
+    }
+    setLoading(false); // Set loading to false once data is fetched
   }, [productId]);
 
-  if (!product) {
-    return <div>Loading...</div>;
+  if (loading) {
+    return <div className="loading-message">Loading...</div>; // You can replace this with a spinner component
+  }
+
+  if (error) {
+    return <div className="error-message">{error}</div>;
   }
 
   return (
     <div className="product-details-container">
       <div className="product-image-section">
         <Carousel showThumbs>
-          {/* Ensure to use product.image for displaying images */}
           <div>
-            <img src={product.image} alt={`${product.name}`} />
+            <img src={product.image} alt={product.name} />
           </div>
         </Carousel>
       </div>
@@ -34,18 +43,28 @@ const ProductDetails = ({ onAddToCart, onAddToWishlist, onAddToCompare, comparis
       <div className="product-info-section">
         <h1 className="product-name">{product.name}</h1>
         <div className="product-rating">
-          <span>⭐⭐⭐⭐⭐</span> {/* Replace with dynamic rating logic */}
-          <span> (3,345 reviews)</span>
+          {/* Dynamic rating */}
+          <span>{'⭐'.repeat(product.rating)}</span>
+          <span> ({product.reviews} reviews)</span>
         </div>
         <p className="product-price">{product.price}</p>
 
         {/* Action Buttons */}
-        <button className="add-to-cart-btn" onClick={() => onAddToCart(product)}>Add To Cart</button>
+        <button
+          className="add-to-cart-btn"
+          onClick={() => onAddToCart(product)}
+          disabled={product.isInCart} // Example of disabling the button if the product is in the cart
+        >
+          Add To Cart
+        </button>
 
-        {/* Link the Buy Now button to the payment page */}
         <Link to="/payment" className="buy-now-btn">Buy Now</Link>
 
-        <button className="add-to-compare-btn" onClick={() => onAddToCompare(product)}>
+        <button
+          className="add-to-compare-btn"
+          onClick={() => onAddToCompare(product)}
+          disabled={comparisonList.includes(product)} // Disable if already in compare
+        >
           Add To Compare
         </button>
 

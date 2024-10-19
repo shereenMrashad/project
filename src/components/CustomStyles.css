@@ -1,316 +1,267 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #e0e0e0;
+    background-color: #121212;
+}
+
 /* Animation for moving text */
 @keyframes scroll-text {
     0% {
         transform: translateX(100%);
-        /* Start from the right outside the screen */
     }
 
     100% {
         transform: translateX(-100%);
-        /* Move all the way to the left outside the screen */
     }
 }
 
 /* Styling for the top navbar with the moving text */
 .moving-text-navbar {
-    background-color: black;
-    /* Dark background color for the text navbar */
+    background-color: #1a1a1a;
     color: white;
-    /* Text color */
     text-align: center;
-    /* Center the text */
     overflow: hidden;
-    /* Hide the text when it goes out of the container */
     white-space: nowrap;
-    /* Prevent the text from wrapping into multiple lines */
     padding: 10px 0;
-    /* Padding for the navbar */
+    border-bottom: 2px solid #D2691E;
+    /* Subtle bottom border */
 }
 
 /* Applying the scroll animation to the moving text */
 .moving-text {
     display: inline-block;
-    animation: scroll-text 10s linear infinite;
-    /* Apply the animation to move the text */
-}
-
-
-/* Make the moving text responsive */
-@media (max-width: 768px) {
-    .moving-text {
-        font-size: 14px;
-        /* Reduce font size on smaller screens */
-    }
+    animation: scroll-text 15s linear infinite;
+    /* Slower for better readability */
+    font-weight: 500;
+    /* Slightly bolder for visibility */
 }
 
 /* Styling the main navbar */
 .navbar {
     background-color: #343a40;
-    /* Dark background color for the main navbar */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    /* Subtle border */
 }
 
 /* Styling for the logo */
 .navbar-brand img {
     margin-right: 10px;
-    /* Add space between logo and text */
-}
-
-.navbar-logo img {
-    background-color: #343a40;
-    padding: 2px;
-    border-radius: 50%;
 }
 
 /* Styling for the links */
 .navbar-nav .nav-link {
-    color: white;
-    /* White color for the links */
+    color: #d1d1d1;
+    /* Light gray for links */
+    transition: color 0.3s ease;
+    /* Smooth transition */
 }
 
 /* Change color on hover */
 .navbar-nav .nav-link:hover {
     color: #FF6347;
-    /* Change color to your preferred color on hover */
+    /* Accent color on hover */
 }
 
 /* Logo and brand name */
 .navbar-brand {
-    color: white;
-    /* Color for the brand name */
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    /* Slightly larger for emphasis */
 }
 
 .navbar-brand:hover {
     color: #FF6347;
-    /* Change color of brand name on hover */
 }
 
 /* Icons styling */
 .navbar-nav .nav-link i {
     font-size: 1.2rem;
-    /* Increase size of the icons */
     color: white;
-    /* White color for the icons */
 }
 
 .navbar-nav .nav-link i:hover {
     color: #FF6347;
-    /* Change color to your preferred color on hover */
 }
 
 /* Styling for the toggler */
 .navbar-toggler {
     border-color: rgba(255, 255, 255, 0.1);
-    /* Light border color */
 }
 
-/* Change color of toggler icon */
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255,255,255,.5)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-    /* Change the color of the toggler icon */
 }
 
 .navbar-toggler:hover {
-    background-color: #D2691E;
-    /* Change background color to the desired hover color */
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Slightly visible on hover */
 }
 
+/* Search page styling */
 .search-page {
     background-color: #121212;
-    /* Dark background for the search page */
     color: #e0e0e0;
-    /* Light text color */
     min-height: 100vh;
-    /* Full height of the viewport */
     padding: 40px;
-    /* Optional padding */
 }
 
+/* Headings */
 h2 {
     text-align: center;
     margin-bottom: 20px;
     color: #C26E41;
-    /* Your accent color */
+    /* Accent color */
+    font-weight: 600;
+    /* Medium weight */
 }
 
+/* Input styles */
 input.form-control {
     border-radius: 25px;
     padding: 10px 20px;
     border: 1px solid #C26E41;
+    transition: border-color 0.3s;
+    /* Smooth transition */
 }
 
 input.form-control:focus {
-    border-color: #C26E41;
+    border-color: #FF6347;
+    /* Accent color on focus */
     box-shadow: 0 0 5px rgba(194, 110, 65, 0.5);
 }
 
+/* List group item styles */
 .list-group-item {
-    background-color: #343a40;
-    /* Darker item background */
+    background-color: #2b2b2b;
+    /* Slightly lighter for contrast */
     color: white;
     margin-bottom: 10px;
     border: none;
     border-radius: 10px;
+    transition: background-color 0.3s;
+    /* Smooth transition */
+}
+
+.list-group-item:hover {
+    background-color: #3b3b3b;
+    /* Darker on hover */
 }
 
 .list-group-item h5 {
     color: #C26E41;
-    /* Accent color for product names */
-}
-
-.list-group-item p {
-    font-size: 0.9rem;
 }
 
 .list-group-item span {
     font-weight: bold;
     color: #FF6347;
-    /* Price color */
 }
 
-/* Container for the signup form */
+/* Signup form container */
 .signup-container {
     padding-top: 50px;
     max-width: 40%;
     margin: auto;
-    /* Center the form */
 }
 
-/* Title styling */
 .signup-container h2 {
     margin-bottom: 20px;
     color: #D2691E;
-    /* Accent color */
-}
-
-/* Style for each input container */
-.signup-container .form-container {
-    background-color: black;
-    /* Background color */
-    color: white;
-    /* Text color */
-    margin: auto;
-    height: 100%;
 }
 
 /* Input fields styling */
-.signup-container input {
-    display: inline-block;
-    border-radius: 25px;
+.signup-container .form-container {
+    background-color: #1a1a1a;
+    /* Consistent background color */
+    padding: 20px;
+    /* Add some padding */
+    border-radius: 10px;
     /* Rounded corners */
-    padding: 10px 20px;
-    /* Padding for inputs */
-    border: 1px solid #D2691E;
-    /* Border color */
-    width: 100%;
-    /* Full width */
-    margin-bottom: 10px;
-    /* Space between inputs */
 }
 
-/* Focus state for input fields */
+/* Input styling */
+.signup-container input {
+    border-radius: 25px;
+    padding: 10px 20px;
+    border: 1px solid #D2691E;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
 .signup-container input:focus {
     border-color: #D2691E;
-    /* Border color on focus */
     box-shadow: 0 0 5px rgba(210, 105, 30, 0.5);
-    /* Shadow effect */
 }
 
 /* Button styling */
 .signup-container button {
     background-color: #D2691E;
-    /* Button background color */
     color: white;
-    /* Button text color */
     border: none;
-    /* No border */
     padding: 10px 20px;
-    /* Padding for the button */
     border-radius: 25px;
-    /* Rounded corners */
     cursor: pointer;
-    /* Pointer cursor on hover */
     margin-top: 20px;
-    /* Space above button */
-}
-
-/* Button hover effect */
-.signup-container button:hover {
-    background-color: #FF6347;
-    /* Change color on hover */
-}
-
-/* Payment Page Styles */
-.payment-page-container {
-    background-color: black;
-    /* Dark background for payment page */
-    color: white;
-    /* Light text color */
-    padding: 40px;
-    /* Padding for content */
-    border-radius: 10px;
-    /* Rounded corners */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-    /* Shadow for depth */
-}
-
-/* Payment Page Heading */
-.payment-page-container h2 {
-    color: #D2691E;
-    /* Accent color for heading */
-    font-weight: bold;
-    /* Bold text */
-    margin-bottom: 20px;
-    /* Space below heading */
-    text-align: center;
-    /* Center heading */
-}
-
-/* Label styling for payment options */
-.form-check-label {
-    font-size: 1.2rem;
-    /* Font size for labels */
-    color: white;
-    /* Text color */
-}
-
-/* Styling for selected radio button */
-.form-check-input:checked {
-    background-color: #D2691E;
-    /* Accent color for checked state */
-    border-color: #D2691E;
-    /* Border color for checked state */
-}
-
-/* Confirm Button */
-.custom-payment-button {
-    background-color: #D2691E;
-    /* Button background color */
-    color: white;
-    /* Button text color */
-    border: none;
-    /* No border */
-    border-radius: 25px;
-    /* Rounded corners */
-    padding: 10px 20px;
-    /* Padding for button */
-    font-weight: bold;
-    /* Bold text */
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s;
     /* Smooth transition */
 }
 
-/* Confirm Button Hover Effect */
-.custom-payment-button:hover {
+.signup-container button:hover {
     background-color: #FF6347;
-    /* Darker color on hover */
 }
 
-/* Make buttons full width on small screens */
+/* Payment page styles */
+.payment-page-container {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    /* Slightly larger shadow */
+}
+
+/* Payment page heading */
+.payment-page-container h2 {
+    color: #D2691E;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Payment options */
+.form-check-label {
+    font-size: 1rem;
+    /* Standardize font size */
+}
+
+/* Confirm button */
+.custom-payment-button {
+    background-color: #D2691E;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    /* Smooth transition */
+}
+
+.custom-payment-button:hover {
+    background-color: #FF6347;
+}
+
+/* Responsive styles */
 @media (max-width: 768px) {
 
     .signup-container,
     .payment-page-container {
         max-width: 90%;
         /* Reduce max width on mobile */
+    }
+
+    .moving-text {
+        font-size: 14px;
+        /* Reduce font size on smaller screens */
     }
 }

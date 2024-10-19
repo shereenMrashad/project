@@ -158,3 +158,16 @@
     /* Full width on smaller screens */
   }
 }
+
+.loading-message {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #C26E41;
+}
+
+.error-message {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #FF6347;
+  /* Red for errors */
+}

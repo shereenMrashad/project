@@ -20,8 +20,6 @@ import Signup from './components/Signup';
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState(null);
-  const [cart, setCart] = useState([]);
-  const [wishlist, setWishlist] = useState([]);
   const [comparisonList, setComparisonList] = useState([]);
 
   // Custom hooks for local storage management
@@ -42,14 +40,27 @@ function App() {
 
   // Functionality for adding items to cart
   const handleAddToCart = (product) => {
-    setCartItems((prev) => [...prev, product]);
+    setCartItems((prev) => {
+      const existingProduct = prev.find(item => item.id === product.id);
+      if (existingProduct) {
+        return prev.map(item =>
+          item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
+        );
+      }
+      return [...prev, { ...product, quantity: 1 }];
+    });
     toast.success(`${product.name} added to cart!`);
   };
 
   // Functionality for adding items to wishlist
   const handleAddToWishlist = (product) => {
-    setWishlistItems((prev) => [...prev, product]);
-    toast.success(`${product.name} added to wishlist!`);
+    setWishlistItems((prev) => {
+      if (!prev.some(item => item.id === product.id)) {
+        return [...prev, product];
+      }
+      toast.warn(`${product.name} is already in your wishlist!`);
+      return prev;
+    });
   };
 
   // Functionality for adding items to comparison
@@ -65,16 +76,19 @@ function App() {
   // Remove item from cart
   const handleRemoveFromCart = (productId) => {
     setCartItems((prev) => prev.filter(item => item.id !== productId));
+    toast.success(`Item removed from cart!`);
   };
 
   // Remove item from wishlist
   const handleRemoveFromWishlist = (productId) => {
     setWishlistItems((prev) => prev.filter(item => item.id !== productId));
+    toast.success(`Item removed from wishlist!`);
   };
 
   // Remove item from comparison
   const handleRemoveFromComparison = (productId) => {
     setComparisonList((prev) => prev.filter(item => item.id !== productId));
+    toast.success(`Item removed from comparison!`);
   };
 
   return (
@@ -90,7 +104,7 @@ function App() {
           <Route path="/payment" element={<PaymentPage />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/search" element={<SearchPage products={productsData.products} />} />
-          <Route path="/cart" element={<CartPage cartItems={cartItems} removeFromCart={handleRemoveFromCart} />} />
+          <Route path="/cart" element={<CartPage cartItems={cartItems} setCartItems={setCartItems} removeFromCart={handleRemoveFromCart} />} />
           <Route path="/wishlist" element={<WishlistPage wishlistItems={wishlistItems} removeFromWishlist={handleRemoveFromWishlist} addToCart={handleAddToCart} />} />
           <Route path="/products" element={<ProductList selectedCategory={selectedCategory} onAddToCart={handleAddToCart} onAddToWishlist={handleAddToWishlist} onAddToComparison={handleAddToComparison} />} />
           <Route path="/product/:productId" element={

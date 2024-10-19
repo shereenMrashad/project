@@ -1,175 +1,141 @@
 /* WishlistPage.css */
-
 /* Set the background color for the entire page */
 html,
 body {
-    background-color: #000;
+    background-color: black;
     /* Set background color to black */
     margin: 0;
     /* Remove default margin */
     height: 100%;
     /* Ensure the body takes the full height */
-    color: #ffffff;
+    color: white;
     /* Set default text color to white */
 }
 
-.wishlist-page {
-    padding: 50px;
-    /* Spacing around the wishlist page */
-    background-color: #1c1c1c;
-    /* Dark background for the page */
-    color: #e0e0e0;
-    /* Light text color */
+/* Styles for the search page */
+.search-page {
+    background-color: black;
+    /* Background color */
+    color: white;
+    /* Text color */
     min-height: 100vh;
-    /* Ensure the wishlist page takes full height */
-    border-radius: 10px;
-    /* Rounded corners for the page */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    /* Subtle shadow for depth */
+    /* Full height */
+    padding: 40px;
+    /* Add padding to the container */
 }
 
-/* Title styling */
+/* Styles for text elements */
+.text-white {
+    color: white;
+    /* Set text color to white */
+    font-weight: bold;
+    /* Make the text bold */
+}
+
+h2 {
+    text-align: center;
+    /* Center the heading */
+    margin-bottom: 20px;
+    /* Add space below the heading */
+    color: #D2691E;
+    /* Change color of the heading to a specific shade */
+}
+
+/* Styles for input fields */
+input.form-control {
+    border-radius: 25px;
+    /* Rounded corners for the input */
+    padding: 10px 20px;
+    /* Padding inside the input */
+    border: 1px solid #D2691E;
+    /* Border color for the input */
+    background-color: white;
+    /* Set background color for inputs to white */
+    color: black;
+    /* Set text color inside inputs to black */
+}
+
+/* Change border color and add shadow effect on focus */
+input.form-control:focus {
+    border-color: #D2691E;
+    /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(210, 105, 30, 0.5);
+    /* Add shadow effect on focus */
+    outline: none;
+    /* Remove default outline */
+}
+
+/* General Page Styling */
+.wishlist-page {
+    background-color: #1e1e1e;
+    /* Dark background for the wishlist page */
+    padding: 30px;
+    /* Padding around the content */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    /* Subtle shadow for depth */
+    color: #f0f0f0;
+    /* Light text color for better readability */
+}
+
+/* Title Styling */
 .wishlist-page h2 {
     text-align: center;
     /* Center the title */
     margin-bottom: 30px;
     /* Space below the title */
     font-size: 2rem;
-    /* Increase font size for emphasis */
+    /* Larger font size */
     color: #c26e41;
     /* Accent color */
+    font-weight: bold;
 }
 
-/* Product styling */
+/* Empty Wishlist Message */
+.wishlist-page p {
+    text-align: center;
+    /* Center the text */
+    font-size: 1.2rem;
+    /* Larger font size for emphasis */
+    color: #888;
+    /* Light gray color for the message */
+}
+
+/* Product Card Styling */
 .product-card {
+    background-color: #2a2a2a;
+    /* Slightly lighter dark background for cards */
+    border: none;
+    /* Remove default border */
+    border-radius: 8px;
+    /* Rounded corners for modern look */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth hover effect */
     margin-bottom: 20px;
     /* Space between cards */
-    background-color: #000000;
-    /* Darker background for cards */
-    border-radius: 8px;
-    /* Rounded corners */
-    padding: 15px;
-    /* Inner padding */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    /* Animation for hover effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    /* Subtle shadow for cards */
 }
 
-/* Product name and price styling */
-.product-name {
-    font-size: 1.2rem;
-    /* Larger font for the product name */
-    color: #C26E41;
-    /* Accent color for product name */
-    margin: 0;
-    /* Remove default margin */
-}
-
-.product-price {
-    font-size: 1.1rem;
-    /* Price font size */
-    color: #f0f0f0;
-    /* Light color for price */
-    font-weight: bold;
-    /* Emphasize price */
-    margin-top: 5px;
-    /* Space above price */
-}
-
-/* Hover effect for product cards */
 .product-card:hover {
     transform: translateY(-5px);
-    /* Lift effect on hover */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+    /* Slight lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
     /* Enhanced shadow effect on hover */
 }
 
-/* Action Button Styles */
-.product-actions {
-    display: flex;
-    justify-content: space-between;
-    /* Space between buttons */
-    margin-top: 10px;
-    /* Space above the actions */
+/* Card Image Styling */
+.card-img {
+    border-radius: 8px 8px 0 0;
+    /* Rounded corners at the top */
+    object-fit: cover;
+    /* Ensure the image covers the area without distortion */
+    height: 200px;
+    /* Fixed height for consistency */
 }
 
-.btn-danger {
-    margin-left: 10px;
-    /* Space between buttons */
-    background-color: #e74c3c;
-    /* Red background for remove button */
-    color: white;
-    /* White text color for contrast */
-    border: none;
-    /* Remove border */
-    border-radius: 5px;
-    /* Rounded corners */
-    padding: 8px 12px;
-    /* Padding for the button */
-    cursor: pointer;
-    /* Pointer cursor on hover */
-    transition: background-color 0.3s ease;
-    /* Smooth transition for hover effect */
-}
-
-.btn-danger:hover {
-    background-color: #c0392b;
-    /* Darker red on hover */
-}
-
-.h5,
-h6 {
-    color: #f0f0f0;
-}
-
-/* Accordion Styles */
-.accordion,
-.accordion-body {
-    background-color: #000000;
-    /* Dark background for accordion */
-    color: #f0f0f0;
-    /* Light text for readability */
-}
-
-.accordion-button {
-    color: #e0e0e0;
-    /* Light text color for buttons */
-}
-
-.accordion-button:hover {
-    background-color: #444;
-    /* Slightly lighter background on hover */
-    color: #c26e41;
-    /* Accent color on hover */
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .product-card {
-        margin: 10px 0;
-        /* Margin adjustments for smaller screens */
-    }
-
-    .wishlist-page {
-        padding: 20px;
-        /* Reduce padding on smaller screens */
-    }
-
-    .wishlist-page h2 {
-        font-size: 1.5rem;
-        /* Smaller title font size */
-    }
-
-    .product-price {
-        font-size: 1rem;
-        /* Adjust price font size for mobile */
-    }
-
-    .btn-danger {
-        padding: 6px 10px;
-        /* Smaller button padding for mobile */
-    }
-}
-
+/* Product Info Styling */
 .product-card h5 {
     font-size: 1.2rem;
     /* Larger font size for product name */
@@ -177,20 +143,109 @@ h6 {
     /* Accent color */
     font-weight: bold;
     /* Bold font for emphasis */
-    margin-bottom: 10px;
+    margin: 10px 0;
     /* Space below product name */
 }
 
+
 .product-card h6 {
     font-size: 1rem;
-    /* Slightly smaller font for category and price */
-    color: #e0e0e0;
-    /* Light text color */
+    /* Slightly smaller font for price */
+    color: #ffffff !important;
+    /* Force the color to be white */
     margin-bottom: 5px;
     /* Space below text */
 }
 
-.text-muted {
-    color: #ecdcdc;
-    /* Muted gray color for subtle text */
+
+
+
+/* Product Actions (Buttons) */
+.product-actions {
+    display: flex;
+    /* Use flexbox for button alignment */
+    justify-content: space-between;
+    /* Space out the buttons */
+    gap: 10px;
+    /* Space between buttons */
+    margin-top: 15px;
+    /* Space above the buttons */
+}
+
+.product-actions .btn {
+    padding: 8px 16px;
+    /* Better button padding for touch targets */
+    font-size: 0.9rem;
+    /* Adjusted font size for consistency */
+    border-radius: 5px;
+    /* Rounded corners for buttons */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    /* Smooth hover effect */
+}
+
+/* Button Variants */
+.product-actions .btn-primary {
+    background-color: #c26e41;
+    /* Accent color for add to cart */
+    border: none;
+    /* Remove default border */
+}
+
+.product-actions .btn-primary:hover {
+    background-color: #a25033;
+    /* Darker shade on hover */
+    transform: translateY(-2px);
+    /* Lift effect on hover */
+}
+
+.product-actions .btn-danger {
+    background-color: #e74c3c;
+    /* Red color for remove button */
+    border: none;
+    /* Remove default border */
+}
+
+.product-actions .btn-danger:hover {
+    background-color: #c0392b;
+    /* Darker red on hover */
+    transform: translateY(-2px);
+    /* Lift effect on hover */
+}
+
+.product-actions .btn-outline-secondary {
+    margin-bottom: 5px;
+    color: #f0f0f0;
+}
+
+.product-actions .btn-outline-secondary:hover {
+    background-color: #C26E41;
+    /* Accent color */
+    color: white;
+    /* White text on hover */
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .wishlist-page {
+        padding: 15px;
+        /* Reduce padding on smaller screens */
+    }
+
+    .product-card {
+        margin-bottom: 15px;
+        /* Adjust spacing between cards for mobile */
+    }
+
+    .product-actions {
+        flex-direction: column;
+        /* Stack buttons vertically on smaller screens */
+    }
+
+    .product-actions .btn {
+        width: 100%;
+        /* Full-width buttons for better touch target */
+        margin-bottom: 10px;
+        /* Space between stacked buttons */
+    }
 }

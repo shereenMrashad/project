@@ -1,6 +1,7 @@
 import React from 'react';
 import './WishlistPage.css';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 function WishlistPage({ wishlistItems, removeFromWishlist, addToCart }) {
     return (
@@ -17,8 +18,14 @@ function WishlistPage({ wishlistItems, removeFromWishlist, addToCart }) {
                                 <Card.Body className="text-center">
                                     <h6 className="text-muted">{item.category}</h6>
                                     <h5>{item.name}</h5>
-                                    <h6 className="text-muted">{item.price}</h6>
+                                    <h6 className="text-white">{item.price}</h6>
                                     <div className="product-actions">
+                                        <Link
+                                            to={`/product/${item.id}`} // Link to the product details page
+                                            className="btn btn-outline-secondary me-2"
+                                        >
+                                            <i className="bi bi-eye"></i> View Details
+                                        </Link>
                                         <Button variant="primary" onClick={() => addToCart(item)}>
                                             <i className="bi bi-cart3"></i> Add to Cart
                                         </Button>

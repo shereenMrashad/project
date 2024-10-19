@@ -3,7 +3,7 @@
     --primary-color: #C26E41;
     --secondary-color: #f0f0f0;
     --dark-bg: #000000;
-    --card-bg: #1c1c1c;
+    --card-bg: #000000;
     --text-color: #e0e0e0;
 }
 
@@ -61,7 +61,7 @@ body.dark {
 .categories {
     color: #C26E41;
     padding: 50px 20px;
-    background-color: #111;
+    background-color: #000000;
     /* Slightly lighter than pure black */
     text-align: center;
 }
@@ -108,12 +108,12 @@ body.dark {
 /* Featured Products Section */
 .featured-products {
     padding: 50px 20px;
-    background-color: #111;
+    background-color: #000000;
     text-align: center;
 }
 
 .product-item {
-    background-color: #333;
+    background-color: #000000;
     padding: 20px;
     border-radius: 10px;
     transition: transform 0.3s ease;

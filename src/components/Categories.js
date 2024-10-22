@@ -5,7 +5,7 @@ import '../index.css';
 function Categories({ onCategorySelect }) {
     const [categories, setCategories] = useState([]);
 
-    // Extract unique categories from products JSON
+
     useEffect(() => {
         const uniqueCategories = [...new Set(productsData.products.map(product => product.category))];
         setCategories(uniqueCategories);

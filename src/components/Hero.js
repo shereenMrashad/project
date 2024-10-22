@@ -1,6 +1,6 @@
 import React from 'react';
 import '../index.css';
-import heroImage from './hero-image.jpg'; // Adjust the path based on where the image is located
+import heroImage from './hero-image.jpg';
 
 function Hero() {
     return (

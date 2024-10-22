@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import productsData from '../data/products.json'; // Ensure the correct path to your JSON file
+import productsData from '../data/products.json';
 import ProductCard from './ProductCard';
 import '../index.css';
-import './FeaturedProducts.css'; // Ensure you have this CSS file for styles
+import './FeaturedProducts.css';
 
 function FeaturedProducts({ selectedCategory, onAddToCart, onAddToWishlist }) {
     const [featuredProducts, setFeaturedProducts] = useState([]);
